@@ -1,0 +1,23 @@
+---
+title: "Get Involved"
+---
+
+We welcome anyone interested in advancing reproducible research in transportation!
+
+## How to Get Involved
+
+### Join Our Community
+
+- Subscribe to our mailing list for updates on events and opportunities
+- Follow our activities on social media
+- Attend our workshops and tutorials at major conferences
+
+### Contribute
+
+- Share your reproducible research practices and experiences
+- Help organize events and workshops
+- Collaborate on developing best practices and guidelines
+
+### Contact Us
+
+For more information or to get involved, please reach out to the steering committee members listed on our [Team](team.qmd) page.

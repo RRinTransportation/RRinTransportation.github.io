@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "RERITE Working Group"
+  navbar:
+    logo: images/logo_png.png
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Team"
+        href: team.qmd
+      - text: "Activities"
+        href: activities.qmd
+      - text: "Get involved"
+        href: getinvolved.qmd
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="styles.css">
+    include-before-body:
+      - navbar.html
+      - content-start.html
+    include-after-body:
+      - content-end.html

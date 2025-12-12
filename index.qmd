@@ -1,0 +1,114 @@
+---
+title: "REproducible Research In Transportation Engineering"
+subtitle: "Advancing Open Science and Transparency in Transportation Research"
+page-layout: full
+---
+
+::: {.hero-section}
+::: {.hero-content}
+*A transportation community where open science, reproducible research and replicable studies are the norms, advancing scientific rigour, accelerating innovation and fostering translation into practice.*
+
+RERITE is a global working group that catalyzes impactful work at the intersection of reproducible research and transportation engineering.
+
+::: {.hero-cta}
+[Learn About Our Mission](about.qmd){.btn-hero-secondary}
+[Get Involved](getinvolved.qmd){.btn-hero-secondary}
+:::
+:::
+:::
+
+## What's New
+
+::: {.news-grid}
+::: {.news-card}
+::: {.news-date}
+Sep 2025
+:::
+
+### [ITSC 2025 Tutorial Success](activities.qmd#past-activities)
+
+Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025, bringing together researchers for hands-on training in reproducible workflows.
+:::
+
+::: {.news-card}
+::: {.news-date}
+Ongoing
+:::
+
+### [Call for Papers: ETRR Special Collection](https://www.springeropen.com/collections/RRT24)
+
+We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
+:::
+
+::: {.news-card}
+::: {.news-date}
+May 2025
+:::
+
+### [CPS-IoT Week 2025 Tutorial](activities.qmd#past-activities)
+
+Organized a tutorial with CPS Virtual Organization on "Going Public with Your CPS Code and Data" at CPS-IoT Week 2025.
+:::
+
+::: {.news-card}
+::: {.news-date}
+Apr 2025
+:::
+
+### [TRS Rotterdam Presentation](activities.qmd#past-activities)
+
+Ruth Lu presented our work using Large Language Models (LLMs) to assess data and code availability in transportation research at the Transportation Research Symposium.
+:::
+
+::: {.news-card}
+::: {.news-date}
+Sep 2024
+:::
+
+### [ITSC 2024 Tutorial Materials Available](https://www.rerite.org/itsc24-rr-tutorial/)
+
+Our hands-on tutorial on "Reproducibility in Transportation Research" at ITSC 2024 materials are now freely available online.
+:::
+
+::: {.news-card}
+::: {.news-date}
+Jan 2024
+:::
+
+### [TRB 2024 Workshop](activities.qmd#past-activities)
+
+Organized a workshop on "Reproducible Research – Why, What, and How" sponsored by eight committees at TRB 2024 Annual Meeting.
+:::
+:::
+
+::: {.view-all}
+[View All Activities →](activities.qmd)
+:::
+
+## Start Here
+
+::: {.start-cards}
+::: {.start-card}
+### Learn About Our Mission
+
+Discover our vision for advancing reproducible research in transportation engineering.
+
+[Read More →](about.qmd)
+:::
+
+::: {.start-card}
+### View Our Activities
+
+See our workshops, tutorials, and publications advancing open science.
+
+[Explore →](activities.qmd)
+:::
+
+::: {.start-card}
+### Get Involved
+
+Join our community and contribute to reproducible research practices.
+
+[Join Us →](getinvolved.qmd)
+:::
+:::

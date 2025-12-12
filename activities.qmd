@@ -1,0 +1,90 @@
+---
+title: "Activities"
+---
+
+## Current Activities
+
+- We are guest-editing a topical collection on "Reproducible Research in Transportation" for [European Transport Research Review (ETRR)](https://etrr.springeropen.com/), which is a peer-reviewed open access journal publishing original high-quality scholarly research and developments in areas related to transportation science, technologies, policy and practice. **A call for papers has been released** [here](https://www.springeropen.com/collections/RRT24).
+
+## Past Activities
+
+### ITSC 2025 Tutorial
+
+The half-day tutorial "Reproducibility in Transportation Research: A Hands-on Tutorial 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025. The session brought together researchers, practitioners, and students for a practical deep dive into tools and workflows that support fully reproducible manuscripts.
+
+![Dr. Cathy Wu, chair of RERITE, delivering the opening remarks for the tutorial (Photo credit: Junyi Ji)](images/ITSC2025/cathy-opening.JPG)
+
+![Dr. Cathy Wu (chair of RERITE) and Dr. Zuduo Zheng (main organizer of our RERITE tutorial 2.0) recap the past tutorials (Photo credit: Junyi Ji)](images/ITSC2025/cathy-zuduo-recap.JPG)
+
+![Dr. Zuduo Zheng presenting on reproducible manuscripts (Photo credit: Junyi Ji)](images/ITSC2025/zuduo.JPG)
+
+![Group photo of the organizers and some of the attendees at the end of the tutorial, from left to right: Hongbo Zhao (UQ), Dr. Saeed Mohammadian (UQ), Dr. Zuduo Zheng (UQ), Dr. Cathy Wu (MIT), Junyi Ji (Vanderbilt), and attendees. (Photo credit: Dan Work)](images/ITSC2025/group.JPG)
+
+### Lyon Presentation (September 2025)
+
+Dr. Michail Makridis (ETH Zürich), the secretary of the RERITE steering committee, was invited to present their work entitled "Reproducibility in transportation research: First insights from transport simulation studies" at ENTPE in Lyon, France on 30th September, 2025. The full paper is open access and is available [[here]](https://doi.org/10.1186/s12544-025-00718-9).
+
+![Dr. Michail Makridis at ENTPE with Christine Buisson, Bahman Madadi and Silvia Varotto.](images/Lyon2025/MM_lyon251.jpg)
+
+![Dr. Michail Makridis presenting at ENTPE, Lyon.](images/Lyon2025/MM_lyon252.jpg)
+
+### TRS Rotterdam 2025
+
+Ruth Lu, an undergraduate researcher at MIT from our working group, gave our first conference presentation at the Transportation Research Symposium in Rotterdam, The Netherlands! We use Large Language Models (LLMs) to assess the state of data and code availability in transportation research.
+
+![Ruth Lu presented our joint efforts. Here's a story of how a Computer Science undergraduate, working with Transporation colleagues, is leveraging AI tools to help accelerate progress in the field. (Photo credit: Dr. Rakhi Manohar Mepparambath)](images/TRS2025/TRS-2025.jpg)
+
+### CPS-IoT Week 2025
+
+We organized a tutorial together with [CPS Virtual Organization](https://cps-vo.org/) on "Going Public with Your CPS Code and Data" at CPS-IoT Week 2025. All the material from this tutorial is available [here](https://cps-vo.org/group/2025CPSTutorial). A small step further can make great strides in reproducibility.
+
+![RERITE team and CPS-VO team and attendees, from left to right: Matt Bunting and Stephen Ress from the CPS-VO team, Junyi Ji from RERITE team and some attendees.](images/CPS2025/1.jpg)
+
+### ITSC 2024 Tutorial
+
+We organized a [hands-on tutorial](itsc24-rr-tutorial/) on "Reproducibility in Transportation Research" at [ITSC2024](https://ieee-itsc.org/2024/), with the following objectives:
+
+1. An introduction to the fundamental concepts and importance of RR to the domain of ITS
+2. Provide hands-on training in the use of tools and software that facilitate reproducibility
+3. Guide researchers on how to properly document and organize data and project outcomes to foster open science
+4. Encourage collaboration among tutorial participants to foster a community that values and practices reproducible research
+
+This tutorial is co-organized by Cathy Wu (Associate Professor at MIT), Bidisha Ghosh (Associate Professor at Trinity College Dublin), Zuduo Zheng (Professor at the University of Queensland), and Irene Martínez (Assistant Professor at the TU Delft). **The tutorial materials are available and can be found [here](itsc24-rr-tutorial/)**.
+
+![](images/ITSC2024/1.JPG)
+
+![](images/ITSC2024/2.JPG)
+
+![Attendee following the provided instructions for data analysis](images/ITSC2024/3.JPG)
+
+![](images/ITSC2024/4.JPG)
+
+![](images/ITSC2024/5.JPG)
+
+### TRB 2024 Workshop
+
+We organized a workshop at TRB 2024 on "Reproducible Research (RR) – Why, What, and How" sponsored by eight committees (ACP50, A0020C, AED10, AED50, ED60, AEP40, AEP50, AJE45), at TRB2024. More details of this workshop can be found [here](http://www.connectedandautonomoustransport.com/uploads/2/5/2/6/25268286/acp50-reproducible-research.pdf).
+
+![](images/TRB2024/1.jpg)
+
+![](images/TRB2024/2.JPG)
+
+![](images/TRB2024/3.JPG)
+
+![](images/TRB2024/4.JPG)
+
+![](images/TRB2024/5.JPG)
+
+![](images/TRB2024/6.JPG)
+
+![](images/TRB2024/7.JPG)
+
+### TRB 2023 Call for Papers
+
+We organized a Call for Papers "Towards Reproducible Transportation Research" at TRB 2023, sponsored by ACP50: Traffic Flow Theory and Characteristics (primary sponsoring committee) and AEP40: Transportation Network Modeling Committee. More details of this event can be found [here](http://www.connectedandautonomoustransport.com/uploads/2/5/2/6/25268286/call_for_paper_reproducible_research_in_transportation_research_final.pdf). As a result, a Lectern Session at TRB2023 was dedicated to Reproducible Transportation Research.
+
+## Publications
+
+- Riehl, K., Kouvelas, A., & Makridis, M. A. (2025). Revisiting reproducibility in transportation simulation studies. *European Transport Research Review*, *17*(1), 22. [[DOI]](https://doi.org/10.1186/s12544-025-00718-9)
+
+- Ji, J., Lu, R., Belkessa, L., Dong, Y., Wang, L., Madadi, B., Varotto, S., Saunier, N., MacFarlane, G., & Wu, C. (2025, September). Exploring Artifacts Availability in Transportation Research Using Large Language Models. Presentation at the International Symposium on Transportation Data & Modelling (ISTDM) 2025, Montréal, Canada. [[Link]](https://symposia.cirrelt.ca/ISTDM2025/en/schedule?slot_id=2710)
