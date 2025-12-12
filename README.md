@@ -1,98 +1,98 @@
-# RERITE - REproducible Research In Transportation Engineering
+# RERITE Working Group Website
 
-This repository is a continuation from the previous GitHub project, which you can find [here](https://github.com/RERITEWorkingGroup/RERITE_website).
+This website is built with [Quarto](https://quarto.org/).
 
-## About This Site
+## Editing Content
 
-This website is built with [Quarto](https://quarto.org/), a scientific and technical publishing system. This makes content editing much easier - you edit simple markdown files (`.qmd`) instead of complex HTML.
+All content is in simple `.qmd` (Quarto Markdown) files:
 
-## How to Edit Content
+- `index.qmd` - Homepage
+- `about.qmd` - About page with vision and mission
+- `team.qmd` - Steering committee members
+- `activities.qmd` - Past and current activities
+- `getinvolved.qmd` - How to get involved
+
+### To Edit Content
+
+1. Edit the `.qmd` files directly (they're just markdown)
+2. Run `quarto render` to compile them to HTML
+3. The HTML files are generated in the `docs/` folder
+4. Commit and push both the `.qmd` files and the `docs/` folder to GitHub
 
 ### Quick Start
 
-1. **Edit the `.qmd` files** in the root directory:
-   - `index.qmd` - Homepage
-   - `about.qmd` - About page (vision and mission)
-   - `team.qmd` - Steering committee members
-   - `activities.qmd` - Past and current activities
-   - `getinvolved.qmd` - How to get involved
-
-2. **Render the site**:
-   ```bash
-   quarto render
-   ```
-   This generates the HTML files in the `docs/` folder.
-
-3. **Commit and push**:
-   ```bash
-   git add .
-   git commit -m "Update content"
-   git push
-   ```
-
-### Installing Quarto
-
-If you don't have Quarto installed:
-- Visit https://quarto.org/docs/get-started/
-- Download and install for your operating system
-
-### Preview Changes Locally
-
 ```bash
+# Install Quarto (if you haven't)
+# Visit https://quarto.org/docs/get-started/
+
+# Render the website
+quarto render
+
+# Or render and preview
 quarto preview
 ```
-
-This will open a browser with a live preview that updates as you edit.
 
 ## Styling
 
 Custom styles are in `docs/styles.css`. The website uses:
-- **Fonts**: Cormorant (headings) and Karla (body text)
-- **Colors**: Velasca Mediterranean palette (sea blue #2B7A9B, sandy beige #E8D7C3)
+- Cormorant font for headings
+- Karla font for body text
+- Velasca Mediterranean color palette
 
-## How the Site is Deployed
+## GitHub Pages
 
-1. Go to **Settings** > **Pages** in your repository.
-2. Under **Source**, select **Deploy from a branch**.
-3. Set the branch to `main` and the folder to `/docs`.
-4. GitHub Pages automatically serves the HTML files from `docs/`.
+The site is published from the `docs/` folder on GitHub Pages.
 
-## Folder Structure
+## Adding Images (Robust)
 
-```
-RRinTransportation.github.io/
-├── docs/                    # Generated HTML (published by GitHub Pages)
-│   ├── site_libs/          # Bootstrap, JavaScript libraries
-│   ├── images/             # Images organized by event
-│   │   ├── TRB2024/
-│   │   ├── ITSC2024/
-│   │   ├── CPS2025/
-│   │   └── logo_png.png
-│   ├── index.html          # Generated from index.qmd
-│   ├── about.html          # Generated from about.qmd
-│   ├── team.html           # Generated from team.qmd
-│   ├── activities.html     # Generated from activities.qmd
-│   ├── getinvolved.html    # Generated from getinvolved.qmd
-│   ├── styles.css          # Custom CSS
-│   └── CNAME
-├── index.qmd               # Homepage source (edit this!)
-├── about.qmd               # About page source (edit this!)
-├── team.qmd                # Team page source (edit this!)
-├── activities.qmd          # Activities page source (edit this!)
-├── getinvolved.qmd         # Get Involved page source (edit this!)
-├── _quarto.yml             # Quarto configuration
-├── LICENSE
-└── README.md
+You can insert images with standard Markdown, and a filter will enhance them for responsiveness and performance.
+
+Basic usage:
+
+```markdown
+![Workshop photo](images/workshop.jpg){width=720 fig-align=center}
 ```
 
-## Tips for Editing
+Recommendations:
+- Place images under `images/`.
+- Provide meaningful captions or `alt` text.
+- Use `{width=...}` to cap visual width while keeping aspect ratio.
+- `fig-align=center` centers the image in its figure.
 
-- **Adding images**: Place images in `docs/images/` and reference them as `docs/images/yourimage.jpg`
-- **Adding links**: Use standard markdown syntax `[text](url)`
-- **Adding team members**: Just add a new bullet point in `team.qmd`
-- **Adding activities**: Add a new section with `###` heading in `activities.qmd`
+Performance features (automatic):
+- `loading="lazy"` and `decoding="async"`
+- Responsive class `img-responsive`
+- Default `sizes="(max-width: 768px) 100vw, 768px"`
 
-## Need Help?
+Advanced `srcset` example:
 
-- [Quarto Documentation](https://quarto.org/docs/guide/)
-- [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
+```markdown
+![Workshop photo](images/workshop-768.jpg){
+	srcset="images/workshop-480.jpg 480w, images/workshop-768.jpg 768w, images/workshop-1200.jpg 1200w",
+	sizes="(max-width: 768px) 100vw, 768px",
+	width=768,
+	class=img-responsive img-rounded,
+	alt="Participants collaborating at the workshop"
+}
+```
+
+Tips:
+- Prefer ~1200px max width for originals to keep pages light.
+- Use `class=img-rounded` for rounded corners.
+
+
+## Where to Put Images
+- Store figures and images in `images/` at the project root.
+- Reference them from content like `![Caption](images/my-figure.jpg){width=720}`.
+- Keep filenames lowercase-with-dashes and add descriptive `alt` text.
+
+## Recommended Image Sizes
+- Standard content: up to ~1200px width.
+- Thumbnails/grids: 200–400px width.
+- Prefer compressed JPEG/WEBP for photos; PNG for graphics.
+
+## Robust Image Markup
+- Basic: `![Workshop](images/workshop.jpg){width=720 fig-align=center}`
+- Advanced: add `srcset`/`sizes` for multiple resolutions.
+
+The site auto-adds `loading="lazy"`, `decoding="async"`, and a responsive class via the image filter in `filters/image.lua`.

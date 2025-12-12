@@ -1,0 +1,22 @@
+---
+title: "ITSC 2025 Tutorial Success"
+date: 2025-09-15
+categories: [tutorial, reproducibility]
+image: images/ITSC2025/itsc25-room.jpg
+---
+
+We held a half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" at ITSC 2025, bringing together researchers for hands-on training in reproducible workflows.
+
+- Topic: Reproducible manuscripts with Quarto
+- Highlights: Live demos, templates, and best practices
+- Materials: [Slides + code](https://www.rerite.org/itsc25-rr-tutorial/)
+
+## Gallery
+
+![Dr. Cathy Wu, chair of RERITE, delivering the opening remarks for the tutorial (Photo credit: Junyi Ji)](../images/ITSC2025/cathy-opening.JPG)
+
+![Dr. Cathy Wu (chair of RERITE) and Dr. Zuduo Zheng (main organizer of our RERITE tutorial 2.0) recap the past tutorials (Photo credit: Junyi Ji)](../images/ITSC2025/cathy-zuduo-recap.JPG)
+
+![Dr. Zuduo Zheng presenting on reproducible manuscripts (Photo credit: Junyi Ji)](../images/ITSC2025/zuduo.JPG)
+
+![Group photo of the organizers and some of the attendees at the end of the tutorial, from left to right: Hongbo Zhao (UQ), Dr. Saeed Mohammadian (UQ), Dr. Zuduo Zheng (UQ), Dr. Cathy Wu (MIT), Junyi Ji (Vanderbilt), and attendees. (Photo credit: Dan Work)](../images/ITSC2025/group.JPG)

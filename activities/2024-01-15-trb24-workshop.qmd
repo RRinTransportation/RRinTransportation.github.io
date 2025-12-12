@@ -1,0 +1,32 @@
+---
+title: "TRB 2024 Workshop: Reproducible Research – Why, What, and How"
+date: 2024-01-15
+categories: [workshop, training]
+status: past
+---
+
+We organized a workshop at the TRB 2024 Annual Meeting sponsored by eight committees (ACP50, A0020C, AED10, AED50, ED60, AEP40, AEP50, AJE45).
+
+**Workshop Highlights**
+- Fundamental principles of reproducible research
+- Practical implementation strategies
+- Tools and best practices
+- Multi-committee collaboration demonstrating broad interest
+
+This successful workshop brought together transportation researchers and practitioners to advance reproducible research practices across multiple domains within the transportation field. More details [here](http://www.connectedandautonomoustransport.com/uploads/2/5/2/6/25268286/acp50-reproducible-research.pdf).
+
+## Gallery
+
+![](../images/TRB2024/1.jpg)
+
+![](../images/TRB2024/2.JPG)
+
+![](../images/TRB2024/3.JPG)
+
+![](../images/TRB2024/4.JPG)
+
+![](../images/TRB2024/5.JPG)
+
+![](../images/TRB2024/6.JPG)
+
+![](../images/TRB2024/7.JPG)
