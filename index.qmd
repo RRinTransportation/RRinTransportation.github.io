@@ -21,7 +21,22 @@ RERITE is a global working group of volunteers who are passionate about practici
 
 ## What's New
 
-::: {.news-grid}
+<div class="news-carousel-container">
+<div class="news-carousel">
+<div class="news-carousel-track">
+<div class="news-slide">
+::: {.news-card}
+::: {.news-date}
+Sep 2025
+:::
+
+### [Lyon Presentation: Reproducibility in Transportation Research](activities/2025-09-30-lyon-presentation.qmd)
+
+Dr. Michail Makridis presented work on "Reproducibility in transportation research: First insights from transport simulation studies" at ENTPE in Lyon, France.
+:::
+</div>
+
+<div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
 Sep 2025
@@ -31,7 +46,9 @@ Sep 2025
 
 Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025, bringing together researchers for hands-on training in reproducible workflows.
 :::
+</div>
 
+<div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
 Ongoing
@@ -41,7 +58,9 @@ Ongoing
 
 We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
 :::
+</div>
 
+<div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
 May 2025
@@ -51,7 +70,9 @@ May 2025
 
 Organized a tutorial with CPS Virtual Organization on "Going Public with Your CPS Code and Data" at CPS-IoT Week 2025.
 :::
+</div>
 
+<div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
 Apr 2025
@@ -61,7 +82,9 @@ Apr 2025
 
 Ruth Lu presented our work using Large Language Models (LLMs) to assess data and code availability in transportation research at the Transportation Research Symposium.
 :::
+</div>
 
+<div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
 Sep 2024
@@ -71,17 +94,119 @@ Sep 2024
 
 Our hands-on tutorial on "Reproducibility in Transportation Research" at ITSC 2024 materials are now freely available online.
 :::
+</div>
+</div>
 
-::: {.news-card}
-::: {.news-date}
-Jan 2024
-:::
+<button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)">‹</button>
+<button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)">›</button>
 
-### [TRB 2024 Workshop](activities/2024-01-15-trb24-workshop.qmd)
+<div class="carousel-dots"></div>
+</div>
+</div>
 
-Organized a workshop on "Reproducible Research – Why, What, and How" sponsored by eight committees at TRB 2024 Annual Meeting.
-:::
-:::
+<script>
+let currentSlide = 0;
+let slidesToShow = 3;
+let totalSlides = 0;
+
+function initCarousel() {
+  const track = document.querySelector('.news-carousel-track');
+  const slides = document.querySelectorAll('.news-slide');
+  const dotsContainer = document.querySelector('.carousel-dots');
+  
+  if (!track || !slides.length) return;
+  
+  totalSlides = slides.length;
+  const maxSlide = totalSlides - slidesToShow;
+  
+  // Create dots for each possible position
+  dotsContainer.innerHTML = '';
+  for (let i = 0; i <= maxSlide; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'carousel-dot';
+    if (i === 0) dot.classList.add('active');
+    dot.onclick = () => goToSlide(i);
+    dotsContainer.appendChild(dot);
+  }
+  
+  // Force initial update
+  currentSlide = 0;
+  updateCarousel();
+  
+  // Ensure layout is calculated
+  setTimeout(() => updateCarousel(), 100);
+}
+
+function updateCarousel() {
+  const track = document.querySelector('.news-carousel-track');
+  const slides = document.querySelectorAll('.news-slide');
+  
+  if (!track || !slides.length) return;
+  
+  // Get actual slide width from first slide
+  const firstSlide = slides[0];
+  const slideWidth = firstSlide.offsetWidth;
+  const offset = -currentSlide * slideWidth;
+  
+  track.style.transform = `translateX(${offset}px)`;
+  
+  // Update dots
+  const dots = document.querySelectorAll('.carousel-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+  
+  // Update button states
+  const prevBtn = document.querySelector('.carousel-btn-prev');
+  const nextBtn = document.querySelector('.carousel-btn-next');
+  const maxSlide = totalSlides - slidesToShow;
+  
+  if (prevBtn && nextBtn) {
+    prevBtn.style.opacity = currentSlide === 0 ? '0.3' : '1';
+    nextBtn.style.opacity = currentSlide >= maxSlide ? '0.3' : '1';
+    prevBtn.style.cursor = currentSlide === 0 ? 'default' : 'pointer';
+    nextBtn.style.cursor = currentSlide >= maxSlide ? 'default' : 'pointer';
+  }
+}
+
+function moveCarousel(direction) {
+  const maxSlide = totalSlides - slidesToShow;
+  currentSlide += direction;
+  if (currentSlide < 0) currentSlide = 0;
+  if (currentSlide > maxSlide) currentSlide = maxSlide;
+  updateCarousel();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateCarousel();
+}
+
+// Initialize on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCarousel);
+} else {
+  initCarousel();
+}
+
+// Responsive: adjust slides shown on smaller screens
+function handleResize() {
+  const width = window.innerWidth;
+  if (width < 768) {
+    slidesToShow = 1;
+  } else if (width < 1024) {
+    slidesToShow = 2;
+  } else {
+    slidesToShow = 3;
+  }
+  currentSlide = Math.min(currentSlide, totalSlides - slidesToShow);
+  initCarousel();
+}
+
+window.addEventListener('resize', handleResize);
+window.addEventListener('load', initCarousel);
+handleResize();
+</script>
 
 ::: {.view-all}
 [View All Activities →](activities.qmd)

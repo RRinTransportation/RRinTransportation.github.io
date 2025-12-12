@@ -7,7 +7,6 @@ project:
 website:
   title: "RERITE Working Group"
   navbar:
-    logo: images/logo_png.png
     left:
       - text: "Home"
         href: index.qmd

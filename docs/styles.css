@@ -311,6 +311,33 @@ section {
   margin-top: 2rem;
 }
 
+/* News Carousel */
+.news-carousel-container {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.news-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.news-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+    width: 100%;
+}
+
+.news-slide {
+    flex: 0 0 calc(100% / 3);
+    padding: 0 1rem;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
 .news-card {
   background: white;
   border-radius: 12px;
@@ -318,6 +345,7 @@ section {
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   border: 1px solid var(--border-color);
+  height: 100%;
 }
 
 .news-card:hover {
@@ -326,6 +354,16 @@ section {
 }
 
 .news-card .date {
+  font-family: 'Karla', sans-serif;
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-date {
   font-family: 'Karla', sans-serif;
   font-size: 0.875rem;
   color: var(--primary-color);
@@ -363,6 +401,65 @@ section {
 .news-card a:hover {
   color: var(--primary-dark);
   gap: 0.75rem;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-dark);
+}
+
+.carousel-btn-prev {
+    left: 0;
+}
+
+.carousel-btn-next {
+    right: 0;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.carousel-dot:hover {
+    background: #bbb;
+}
+
+.carousel-dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
 }
 
 /* Start Cards */
@@ -953,7 +1050,27 @@ figure img.img-responsive {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .news-slide {
+    flex: 0 0 50%;
+  }
+}
+
 @media (max-width: 768px) {
+  .news-slide {
+    flex: 0 0 100%;
+  }
+  
+  .news-carousel {
+    padding: 0 2.5rem;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.25rem;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }

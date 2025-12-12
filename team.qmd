@@ -26,3 +26,5 @@ title: "Team"
 - **Secretary**  
   Dr. Michail Makridis  
   *ETH Zürich*
+
+## Members
