@@ -24,17 +24,19 @@ RERITE is a global working group of volunteers who are passionate about practici
 <div class="news-carousel-container">
 <div class="news-carousel">
 <div class="news-carousel-track">
+
 <div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
-Sep 2025
+Ongoing
 :::
 
-### [Lyon Presentation: Reproducibility in Transportation Research](activities/2025-09-30-lyon-presentation.qmd)
+### [Call for Papers: ETRR Special Collection](activities/2025-05-30-etrr-special-collection.qmd)
 
-Dr. Michail Makridis presented work on "Reproducibility in transportation research: First insights from transport simulation studies" at ENTPE in Lyon, France.
+We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
 :::
 </div>
+
 
 <div class="news-slide">
 ::: {.news-card}
@@ -48,17 +50,19 @@ Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reprod
 :::
 </div>
 
+
 <div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
-Ongoing
+Sep 2025
 :::
 
-### [Call for Papers: ETRR Special Collection](activities/2025-05-30-etrr-special-collection.qmd)
+### [Lyon Presentation: Reproducibility in Transportation Research](activities/2025-09-30-lyon-presentation.qmd)
 
-We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
+Dr. Michail Makridis presented work on "Reproducibility in transportation research: First insights from transport simulation studies" at ENTPE in Lyon, France.
 :::
 </div>
+
 
 <div class="news-slide">
 ::: {.news-card}
@@ -78,7 +82,7 @@ Organized a tutorial with CPS Virtual Organization on "Going Public with Your CP
 Apr 2025
 :::
 
-### [TRS Rotterdam Presentation](activities/2025-04-15-trs-rotterdam-presentation.qmd)
+### [TRS 2025 Rotterdam Presentation](activities/2025-04-15-trs-rotterdam-presentation.qmd)
 
 Ruth Lu presented our work using Large Language Models (LLMs) to assess data and code availability in transportation research at the Transportation Research Symposium.
 :::
@@ -90,9 +94,9 @@ Ruth Lu presented our work using Large Language Models (LLMs) to assess data and
 Sep 2024
 :::
 
-### [ITSC 2024 Tutorial Materials Available](activities/2024-09-15-itsc24-tutorial-materials.qmd)
+### [ITSC 2024 Tutorial](activities/2024-09-15-itsc24-tutorial-materials.qmd)
 
-Our hands-on tutorial on "Reproducibility in Transportation Research" at ITSC 2024 materials are now freely available online.
+We hosted a hands-on tutorial on Reproducibility in Transportation Research at ITSC 2024. Our hands-on tutorial on "Reproducibility in Transportation Research" at ITSC 2024 materials are now freely available online.
 :::
 </div>
 </div>
