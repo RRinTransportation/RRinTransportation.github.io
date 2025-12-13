@@ -20,7 +20,7 @@ RERITE is a global working group of volunteers who are passionate about practici
 :::
 :::
 
-## What's New
+## Spotlights
 
 <div class="news-carousel-container">
 <div class="news-carousel">
@@ -217,7 +217,7 @@ handleResize();
 [View All Activities →](activities.qmd)
 :::
 
-## Start Here
+## Learn more
 
 ::: {.start-cards}
 ::: {.start-card}
