@@ -223,6 +223,9 @@ const teamData = {
     { name: "William Barbour", affiliation: "Vanderbilt University"},
     { name: "Biagio Ciuffo", affiliation: "European Commission Joint Research Centre"},
     { name: "David Levinson", affiliation: "University of Sydney"},
+    { name: "Joan Walker", affiliation: "University of California, Berkeley"},
+    { name: "Jonathan Sprinkle", affiliation: "Vanderbilt University"},
+    { name: "Yanbing Wang", affiliation: "Arizona State University"},
   ]
 };
 
