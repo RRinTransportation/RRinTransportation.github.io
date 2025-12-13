@@ -32,7 +32,7 @@ RERITE is a global working group of volunteers who are passionate about practici
 Ongoing
 :::
 
-### [Call for Papers: ETRR Special Collection](activities/2025-05-30-etrr-special-collection.qmd)
+### [ETRR Special Collection](activities/2025-05-30-etrr-special-collection.qmd)
 
 We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
 :::
