@@ -1,8 +1,8 @@
 ---
 title: "Call for Papers: ETRR Special Collection on Reproducible Research"
-date: 2025-01-01
+date: 2025-05-30
 categories: [call-for-papers, journal, ongoing]
-status: ongoing
+status: past
 ---
 
 We are guest-editing a topical collection on "Reproducible Research in Transportation" for [European Transport Research Review (ETRR)](https://etrr.springeropen.com/), a peer-reviewed open access journal.
