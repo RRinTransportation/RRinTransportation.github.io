@@ -1,0 +1,245 @@
+# awesome-rerite
+A curated list of awesome open datasets and benchmarks in transportation research.
+
+## Contents
+
+```{=html}
+<div class="floating-toc" role="navigation" aria-label="Table of contents">
+    <strong>On this page</strong>
+    <nav>
+        <ol>
+            <li><a href="#how-to-contribute">How to Contribute</a></li>
+            <li><a href="#transportation-demand-and-network-modeling">Transportation Demand &amp; Network Modeling</a></li>
+            <li><a href="#discrete-choice-modeling">Discrete Choice Modeling</a></li>
+            <li><a href="#traffic-dynamics-and-control">Traffic Dynamics and Control</a></li>
+            <li><a href="#traffic-simulation">Traffic Simulation</a></li>
+            <li><a href="#spatio-temporal-data-and-modeling">Spatio-Temporal Data and Modeling</a></li>
+            <li><a href="#road-safety">Road Safety</a></li>
+            <li><a href="#mobility-services">Mobility Services</a></li>
+            <li><a href="#optimization">Optimization</a></li>
+            <li><a href="#transportation-and-ai">Transportation and AI</a></li>
+            <li><a href="#data-standards-in-transportation">Data Standards in Transportation</a></li>
+            <li><a href="#notable-figures-in-transportation">Notable Figures in Transportation</a></li>
+            <li><a href="#miscellaneous">Miscellaneous</a></li>
+        </ol>
+    </nav>
+</div>
+```
+
+## Transportation Demand and Network Modeling
+
+### Network & OD Data
+- **[Travel Forecasting, Explained](https://tfresource.org/)** — a community-maintained knowledge base for demand modeling; hat tip to [Greg Macfarlane](https://gregmacfarlane.github.io/).
+- **[Transportation Networks](https://github.com/bstabler/TransportationNetworks)** — curated benchmark city networks compiled by Ben Stabler.
+- **[MATSim Scenarios](https://github.com/matsim-scenarios)** — ready-to-run multi-agent transport scenarios for MATSim experiments.
+- **[UniTA](https://github.com/xuxiaotong/A_unified_and_validated_traffic_dataset_for_20_U.S._cities)** — unified traffic assignment datasets spanning 20 U.S. cities (nickname provided here until the authors coin an official one).
+- **[WardropNet](https://github.com/tumBAIS/ML-CO-pipeline-TrafficPrediction)** — ICLR 2025 benchmark for equilibrium-augmented traffic flow prediction.
+- **[LargeOD](https://github.com/tsinghua-fib-lab/CommutingODGen-Dataset)** — ICLR 2025 dataset for large-scale commuting OD generation.
+- **[GNN4UE](https://figshare.com/articles/dataset/_b_Equilibrium-Traffic-Networks_b_/27889251)** — user-equilibrium traffic flow datasets for graph neural network prediction contributed by [Bahman Madadi](https://github.com/bahmanmdd).
+
+### Tooling & Workflows
+- **[OSMnx](https://osmnx.readthedocs.io/en/stable/)** — award-winning toolkit by [Geoff Boeing](https://geoffboeing.com/) for downloading, modeling, and analyzing street networks.
+- **[osm2gmns](https://pypi.org/project/osm2gmns/1.0.0rc1/)** — converts OpenStreetMap data into GMNS format; developed by Jiawei Lu and Xuesong (Simon) Zhou.
+- **[DTALite](https://github.com/asu-trans-ai-lab/DTALite)** — ASU Transportation AI Lab's macroscopic/mesoscopic AMS library that natively reads GMNS.
+- **[DTA](https://github.com/DrKeHan/DTA)** — Dr. Ke Han's open-source dynamic user equilibrium solver (see Networks and Spatial Economics, 2019).
+- **[OSRM](https://project-osrm.org/)** — C++14 routing engine providing lightning-fast shortest path queries.
+
+### Research Benchmarks
+- **[WardropNet](https://openreview.net/forum?id=7FHSPd3SRE)** and **[LargeOD](https://openreview.net/forum?id=WeJEidTzff)** — paired ICLR 2025 papers outlining reproducible evaluation pipelines.
+- **[GNN4UE](https://figshare.com/articles/dataset/_b_Equilibrium-Traffic-Networks_b_/27889251)** — includes starter baselines for graph learning atop equilibrium traffic networks.
+
+## Discrete Choice Modeling
+
+### Benchmarks & Toolkits
+- **[Choice-Learn](https://github.com/artefactory/choice-learn)** — Python-first framework for training and benchmarking large-scale discrete choice models.
+- **[DNN for Choice Modeling](https://github.com/siqi-feng/DNN-behavioral-regularity)** — code accompanying the TR-C paper on enforcing behavioral regularity with gradient penalties.
+- **[Apollo](https://www.apollochoicemodelling.com/examples.html)** — freeware choice-model estimation suite (Hess & Palma, 2019); shoutout to [Siqi Feng](https://daziano.cee.cornell.edu/members/) for the pointer.
+
+### Datasets
+
+- **[Swissmetro](https://transp-or.epfl.ch/pythonbiogeme/examples_swissmetro.html)** — canonical dataset for testing discrete choice specifications (thanks again to Siqi).
+
+## Traffic Dynamics and Control
+
+### Vehicle Trajectory Data
+
+- **[pNEUMA](https://open-traffic.epfl.ch/)** — large-scale drone capture over Athens for microscopic trajectory analysis.
+- **Songdo dataset** — paired [traffic](https://doi.org/10.5281/zenodo.13828384) and [vision](https://doi.org/10.5281/zenodo.13828408) releases documenting the Songdo smart-city corridor.
+- **[Waymo Open Dataset](https://waymo.com/open/)** — richly annotated autonomous-driving trajectories.
+- **[I-24 MOTION](https://i24motion.org/data)** — long-horizon freeway trajectories from Tennessee's instrumented corridor.
+- **[MiTra](https://opara.zih.tu-dresden.de/items/68482417-ddc5-40ac-885a-83124bd459e8)** — drone-based all-traffic-state freeway dataset collected near Milan.
+- **[TGSIM I-294](https://data.transportation.gov/Automobiles/Third-Generation-Simulation-Data-TGSIM-I-294-L1-Tr/7zjf-a4zf/about_data)** — third-generation simulation data for I-294 in Chicago.
+- **[Zen Traffic Data](https://zen-traffic-data.net/english/)** — extensive Japanese freeway sensor archive.
+- **[OpenACC](https://data.jrc.ec.europa.eu/dataset/9702c950-c80f-4d2f-982f-44d06ea0009f)** — Adaptive Cruise Control experiments from the Joint Research Centre.
+- **[microSIM-ACC](https://github.com/microSIM-ACC)** — open code + datasets for microscopic ACC controller evaluation.
+
+### Ring-Road Experiments ([The Lord of the Rings](https://dl.acm.org/doi/10.1145/3494577))
+- **Nagoya Traffic Jam Experiment** — [download trajectories](https://github.com/mathematical-society-of-traffic-flow/mathematical-society-of-traffic-flow.github.io/raw/refs/heads/main/assets/data/data.zip).
+- **Dome Traffic Jam Experiment** — [circular arena trajectories](https://github.com/mathematical-society-of-traffic-flow/mathematical-society-of-traffic-flow.github.io/raw/refs/heads/main/assets/data/trajectory.zip).
+- **[Arizona Ring Experiments Dataset (ARED)](https://ir.vanderbilt.edu/items/2e6f1c05-0174-4abd-b71c-e7e40eae0ce3)** — autonomous-vehicle dampening experiments from Vanderbilt.
+
+### Freeway Traffic Control
+- **[Flow-Lite](https://github.com/mit-wu-lab/automatic_vehicular_control)** — lightweight sibling of [Flow](https://flow-project.github.io) without RLlib, ideal for rapid freeway controller prototyping.
+
+### Urban Traffic Control
+- **[Intersection Zoo](https://github.com/mit-wu-lab/IntersectionZoo)** — ICLR 2025 benchmark for multi-agent eco-driving at signalized intersections.
+
+## Traffic Simulation
+_General-purpose simulators that complement the DTA-focused resources above._
+
+- **[UXSim](https://github.com/toruseo/UXsim)** — mesoscopic simulator by [Toru Seo](https://toruseo.jp/) for large-scale experiments.
+- **[DTALite](https://github.com/asu-trans-ai-lab/DTALite)** — doubles as a simulator when you need AMS-style macroscopic and mesoscopic assignment.
+- **[sym-metanet](https://github.com/FilippoAiraldi/sym-metanet)** — Python implementation of the METANET macroscopic control framework by [Filippo Airaldi](https://filippoairaldi.github.io/).
+
+## Spatio-Temporal Data and Modeling
+- **[Spatiotemporal Data](https://spatiotemporal-data.github.io/)** — curated catalog of datasets, models, and code for spatio-temporal learning.
+
+## Road Safety
+- **[Surrogate Safety Measures](https://github.com/Yiru-Jiao/SSMsOnPlane)** — open implementations of plane-based SSMs from [Yiru Jiao](https://github.com/Yiru-Jiao).
+- **[SHRP2NDS-BEVTR](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS)** — bird's-eye reconstructions of SHRP2 naturalistic driving data with crash/near-crash labels (also courtesy of Yiru).
+
+## Mobility Services
+- **[FleetPy](https://github.com/TUM-VT/FleetPy)** — open-source fleet simulation framework (seven-plus reference projects and counting!).
+
+## Optimization
+- **[RL4CO](https://rl4co.readthedocs.io/en/latest/docs/content/intro/environments/)** — reinforcement-learning-for-combinatorial-optimization environments collected under one documented roof.
+
+## Transportation and AI
+
+### Generative & Tutorial Resources
+- **[DGMinTransportation](https://github.com/UMN-Choi-Lab/DGMinTransportation)** — companion repo for “A Gentle Introduction and Tutorial on Deep Generative Models in Transportation Research” from [UMN-Choi-Lab](https://choi-seongjin.github.io/index.html).
+
+### Traffic Prediction via Deep Learning
+
+_Still one of the hottest intersections between AI and transportation — here are curated entry points._
+
+- **[Deep learning models for traffic prediction](https://github.com/aptx1231/Traffic-Prediction-Open-Code-Summary)** — Jiawei Jiang’s catalog of open-source prediction models and codebases.
+- **[LibCity](https://libcity.ai/)** — unified benchmark covering spatio-temporal datasets, models, and evaluation tooling.
+
+## Data Standards in Transportation
+- **[GTFS and more](https://github.com/MobilityData/awesome-transit)** — MobilityData’s definitive list covering GTFS, NeTEx, and emerging mobility data specs.
+
+
+## Notable Figures in Transportation
+- **[Dietrich Braess](https://homepage.ruhr-uni-bochum.de/dietrich.braess/#paradox)** — of Braess’s Paradox fame: adding a link can slow everyone down.
+- **[Markos Papageorgiou](http://www.dssl.tuc.gr/en/members/papageorgiou_cv.htm)** — start with this [InControl podcast episode](https://www.incontrolpodcast.com/1632769/episodes/17836860-ep36-markos-papageorgiou-traffic-control-theory-and-practice) for a tour of modern traffic control.
+
+## Miscellaneous
+- **[Optuna](https://optuna.org/)** — automatic hyperparameter optimization framework (thanks to [Alex Richardson](https://scholar.google.com/citations?user=BB-pmW0AAAAJ&hl=en) for the recommendation).
+- **[OSMnx Matplotlib animation](https://github.com/mikhailsirenko/osmnx-matplotlib-animation)** — visualize your personal mobility over urban networks.
+- **[Edge-bundling tool for regional mobility flow data](https://zenodo.org/records/14532548)** — high-impact flow visualizations for regional planning.
+
+## How to Contribute?
+
+If you have a dataset or benchmark to contribute, you can:
+
+1. Open an [issue](https://github.com/RRinTransportation/awesome-rerite/issues)
+
+2. Submit a pull request  
+
+3. Contact me via [email](junyi.ji@vanderbilt.edu)
+
+---
+Maintained by [Junyi Ji](https://www.jijunyi.com/), Views are my own.
+Last updated: Septempber 15, 2025.
+
+```{=html}
+<style>
+/* Floating TOC styling */
+.floating-toc {
+    background: #f5fbfe;
+    border-left: 4px solid #2B7A9B;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    margin: 0 0 2rem 0;
+}
+
+.floating-toc nav ol {
+    list-style: none;
+    margin: 0.75rem 0 0 0;
+    padding-left: 0;
+}
+
+.floating-toc nav li + li {
+    margin-top: 0.45rem;
+}
+
+.floating-toc nav a {
+    text-decoration: none;
+    color: #1f4f65;
+}
+
+.floating-toc nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 960px) {
+    .floating-toc {
+        position: fixed;
+        right: 2rem;
+        top: 6.5rem;
+        width: 260px;
+        max-height: calc(100vh - 8rem);
+        overflow-y: auto;
+        box-shadow: var(--shadow-md);
+    }
+}
+
+@media (max-width: 959px) {
+    .floating-toc {
+        width: 100%;
+    }
+}
+
+.back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: #2B7A9B;
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 0.75rem 1.25rem;
+        box-shadow: var(--shadow-md);
+        cursor: pointer;
+        font-family: 'Karla', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        display: none;
+        z-index: 50;
+}
+
+.back-to-top.show {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+}
+
+.back-to-top:hover {
+        background: #1e5570;
+}
+</style>
+```
+
+```{=html}
+<button class="back-to-top" aria-label="Back to top">↑ Top</button>
+<script>
+    const backToTopBtn = document.querySelector('.back-to-top');
+    const toggleBtnVisibility = () => {
+        if (!backToTopBtn) return;
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    };
+
+    window.addEventListener('scroll', toggleBtnVisibility);
+    toggleBtnVisibility();
+
+    backToTopBtn?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+```

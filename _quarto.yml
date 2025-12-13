@@ -17,6 +17,10 @@ website:
         href: team.qmd
       - text: "Activities"
         href: activities.qmd
+      - text: "Resources"
+        menu:
+          - text: "awesome-rerite"
+            href: awesome-rerite.qmd
       - text: "Get involved"
         href: getinvolved.qmd
 
