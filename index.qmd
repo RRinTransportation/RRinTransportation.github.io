@@ -42,7 +42,7 @@ Dr. Michail Makridis presented work on "Reproducibility in transportation resear
 Sep 2025
 :::
 
-### [ITSC 2025 Tutorial Success](activities/2025-09-15-itsc25-tutorial.qmd)
+### [ITSC 2025 Tutorial Success](activities/2025-11-18-itsc25-tutorial.qmd)
 
 Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025, bringing together researchers for hands-on training in reproducible workflows.
 :::

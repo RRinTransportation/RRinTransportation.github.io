@@ -15,7 +15,7 @@ Explore our past workshops, tutorials, and publications, along with ongoing init
 <div class="post-card">
 <div class="post-card-header">
 <span class="post-status ongoing">Ongoing</span>
-<span class="post-date">Jan 2025</span>
+<span class="post-date">Sep 2024</span>
 </div>
 
 ### [Call for Papers: ETRR Special Collection on Reproducible Research](activities/2025-05-30-etrr-special-collection.qmd)
@@ -33,6 +33,26 @@ We are guest-editing a topical collection on "Reproducible Research in Transport
 ## Past Activities
 
 <div class="timeline-section past-section">
+
+
+
+<div class="timeline-post">
+<div class="post-timeline-marker">●</div>
+<div class="post-card">
+<div class="post-card-header">
+<span class="post-status past">Past</span>
+<span class="post-date">Sep 2025</span>
+</div>
+
+### [ITSC 2025 Tutorial](activities/2025-11-18-itsc25-tutorial.qmd)
+
+Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025.
+
+Brought together researchers for hands-on training in reproducible workflows and best practices in preparing the manuscripts.
+
+[Read Full Post →](activities/2025-11-18-itsc25-tutorial.qmd){.read-more}
+</div>
+</div>
 
 <div class="timeline-post">
 <div class="post-timeline-marker">●</div>
@@ -57,30 +77,12 @@ Open access paper now available with insights on reproducibility in simulation s
 <div class="post-card">
 <div class="post-card-header">
 <span class="post-status past">Past</span>
-<span class="post-date">Sep 2025</span>
-</div>
-
-### [ITSC 2025 Tutorial Success](activities/2025-09-15-itsc25-tutorial.qmd)
-
-Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" was successfully held at ITSC 2025.
-
-Brought together researchers for hands-on training in reproducible workflows and best practices.
-
-[Read Full Post →](activities/2025-09-15-itsc25-tutorial.qmd){.read-more}
-</div>
-</div>
-
-<div class="timeline-post">
-<div class="post-timeline-marker">●</div>
-<div class="post-card">
-<div class="post-card-header">
-<span class="post-status past">Past</span>
 <span class="post-date">May 2025</span>
 </div>
 
 ### [CPS-IoT Week 2025 Tutorial](activities/2025-05-01-cps-iot-week-tutorial.qmd)
 
-Organized a tutorial with CPS Virtual Organization on "Going Public with Your CPS Code and Data" at CPS-IoT Week 2025.
+We organized a tutorial with CPS Virtual Organization ([CPS-VO](https://cps-vo.org/)) on "Going Public with Your CPS Code and Data" at CPS-IoT Week 2025.
 
 Equipped researchers with practical tools for sharing work effectively with the broader community.
 
@@ -96,11 +98,11 @@ Equipped researchers with practical tools for sharing work effectively with the 
 <span class="post-date">Apr 2025</span>
 </div>
 
-### [TRS Rotterdam Presentation: LLMs Assess Data & Code Availability](activities/2025-04-15-trs-rotterdam-presentation.qmd)
+### [TRS 2025 Rotterdam Presentation: LLMs Evaluate Data & Code Availability](activities/2025-04-15-trs-rotterdam-presentation.qmd)
 
-Ruth Lu presented our work using Large Language Models (LLMs) to assess data and code availability in transportation research.
+Ruth Lu (undergraduate student, MIT) presented our work using Large Language Models (LLMs) to automatcially evalaute data and code availability in transportation research.
 
-Highlighted innovative uses of AI in evaluating reproducibility practices and open science adoption.
+Highlighted innovative uses of AI tools in evaluating open science practices in Transportation community.
 
 [Read Full Post →](activities/2025-04-15-trs-rotterdam-presentation.qmd){.read-more}
 </div>
@@ -114,11 +116,11 @@ Highlighted innovative uses of AI in evaluating reproducibility practices and op
 <span class="post-date">Sep 2024</span>
 </div>
 
-### [ITSC 2024 Tutorial Materials Now Available](activities/2024-09-15-itsc24-tutorial-materials.qmd)
+### [ITSC 2024 Tutorial](activities/2024-09-15-itsc24-tutorial-materials.qmd)
 
-Our hands-on tutorial on "Reproducibility in Transportation Research" from ITSC 2024 is now freely available online.
+We hosted a hands-on tutorial on Reproducibility in Transportation Research at ITSC 2024. It was widely praised by attendees, with participants calling it the most useful session of the conference and recommending it for group-wide study.
 
-Access slides, code examples, recordings, and participant resources.
+All tutorial materials from ITSC 2024 are now freely available online, including slides, code examples, and participant resources.
 
 [Read Full Post →](activities/2024-09-15-itsc24-tutorial-materials.qmd){.read-more}
 </div>
@@ -134,7 +136,7 @@ Access slides, code examples, recordings, and participant resources.
 
 ### [TRB 2024 Workshop: Reproducible Research – Why, What, and How](activities/2024-01-15-trb24-workshop.qmd)
 
-Organized a workshop at the TRB 2024 Annual Meeting sponsored by eight committees.
+We organized a workshop at the TRB 2024 Annual Meeting sponsored by eight committees.
 
 Brought together researchers and practitioners to advance reproducible research practices across transportation domains.
 

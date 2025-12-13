@@ -7,13 +7,15 @@ status: past
 
 We are guest-editing a topical collection on "Reproducible Research in Transportation" for [European Transport Research Review (ETRR)](https://etrr.springeropen.com/), a peer-reviewed open access journal.
 
-**Collection Scope**
+## Collection Scope
+
 - Original high-quality scholarly research on reproducible practices
 - Transportation science, technologies, policy, and practice
 - Best practices and case studies in open science
 - Tools and methodologies for reproducibility
 
-**How to Submit**
+## How to Submit
+
 [Submit your work to the ETRR Special Collection →](https://www.springeropen.com/collections/RRT24)
 
 We welcome contributions from researchers and practitioners working to advance reproducible research in transportation.

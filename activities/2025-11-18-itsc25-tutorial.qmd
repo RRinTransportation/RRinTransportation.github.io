@@ -1,8 +1,7 @@
 ---
 title: "ITSC 2025 Tutorial"
-date: 2025-09-15
+date: 2025-11-18
 categories: [tutorial, reproducibility]
-image: images/ITSC2025/itsc25-room.jpg
 ---
 
 We held a half-day tutorial "Reproducibility in Transportation Research 2.0 – Reproducible Manuscripts" at ITSC 2025, bringing together researchers for hands-on training in reproducible workflows.
