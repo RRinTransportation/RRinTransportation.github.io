@@ -184,6 +184,10 @@ Last updated: Septempber 15, 2025.
         overflow-y: auto;
         box-shadow: var(--shadow-md);
     }
+
+    .content-container {
+        padding-right: 360px;
+    }
 }
 
 @media (max-width: 959px) {
