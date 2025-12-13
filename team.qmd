@@ -145,7 +145,7 @@ title: "Team"
   background: #7E57C2;
 }
 
-.role-dot.editor {
+.role-dot.guest-editor {
   background: #FF7043;
 }
 
@@ -198,16 +198,17 @@ const teamData = {
     { name: "Irene Martínez Josemaría", affiliation: "TU Delft", roles: ["Tutorial"]},
     { name: "Ruth Lu", affiliation: "Massachusetts Institute of Technology", roles: ["Volunteer Researcher"] },
     { name: "Gregory S. Macfarlane", affiliation: "Brigham Young University", roles: ["Volunteer Researcher"] },
-    { name: "Nicolas Saunier", affiliation: "Polytechnique Montréal", roles: ["Volunteer Researcher", "Workshop", "Editor"] },
-    { name: "Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher", "Editor", "Website Maintainer"] },
+    { name: "Nicolas Saunier", affiliation: "Polytechnique Montréal", roles: ["Volunteer Researcher", "Workshop", "Guest Editor"] },
+    { name: "Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher", "Guest Editor", "Website Maintainer"] },
     { name: "Bahman Madadi", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher","Website Maintainer"] },
     { name: "Liming Wang", affiliation: "Portland State University", roles: ["Volunteer Researcher"] },
-    { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial", "Editor"]},
-    { name: "Zuduo Zheng", affiliation: "University of Queensland", roles: ["Workshop", "Tutorial", "Editor"]},
-    { name: "Christine Buisson", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Editor"]},
+    { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial", "Guest Editor"]},
+    { name: "Zuduo Zheng", affiliation: "University of Queensland", roles: ["Workshop", "Tutorial", "Guest Editor"]},
+    { name: "Christine Buisson", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Guest Editor"]},
     { name: "Xuesong (Simon) Zhou", affiliation: "Arizona State University", roles: ["Tutorial"] },
     { name: "Hongbo Zhao", affiliation: "The University of Queensland", roles: ["Tutorial"] },
     { name: "Saeed Mohammadian", affiliation: "The University of Queensland", roles: ["Tutorial"] },
+    { name: "Hoa Xuan Nguyen", affiliation: "Trinity College Dublin", roles: ["Tutorial"] },
   ],
   friends: [
     { name: "Marcello Montanino", affiliation: "University of Naples Federico II"},
