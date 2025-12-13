@@ -18,13 +18,13 @@ Explore our past workshops, tutorials, and publications, along with ongoing init
 <span class="post-date">Jan 2025</span>
 </div>
 
-### [Call for Papers: ETRR Special Collection on Reproducible Research](activities/2025-ongoing-etrr-special-collection.qmd)
+### [Call for Papers: ETRR Special Collection on Reproducible Research](activities/2025-05-30-etrr-special-collection.qmd)
 
 We are guest-editing a topical collection on "Reproducible Research in Transportation" for [European Transport Research Review (ETRR)](https://etrr.springeropen.com/).
 
 **Submit your work** on reproducible practices, tools, and case studies in transportation.
 
-[Read Full Post →](activities/2025-ongoing-etrr-special-collection.qmd){.read-more}
+[Read Full Post →](activities/2025-05-30-etrr-special-collection.qmd){.read-more}
 </div>
 </div>
 

@@ -54,7 +54,7 @@ Our half-day tutorial "Reproducibility in Transportation Research 2.0 – Reprod
 Ongoing
 :::
 
-### [Call for Papers: ETRR Special Collection](activities/2025-ongoing-etrr-special-collection.qmd)
+### [Call for Papers: ETRR Special Collection](activities/2025-05-30-etrr-special-collection.qmd)
 
 We're guest-editing a topical collection on "Reproducible Research in Transportation" for European Transport Research Review (ETRR). Submit your work!
 :::
