@@ -2,22 +2,15 @@
 title: "Get Involved"
 ---
 
-We welcome anyone interested in advancing reproducible research in transportation!
+We welcome anyone interested in advancing reproducible research in transportation! To express your interest, please fill out this [involvement survey](https://forms.gle/9WFfjWJ8VifFrHaY8).
 
-## How to Get Involved
-
-### Join Our Community
-
-- Subscribe to our mailing list for updates on events and opportunities
-- Follow our activities on social media
-- Attend our workshops and tutorials at major conferences
-
-### Contribute
-
-- Share your reproducible research practices and experiences
-- Help organize events and workshops
-- Collaborate on developing best practices and guidelines
 
 ### Contact Us
 
-For more information or to get involved, please reach out to the steering committee members listed on our [Team](team.qmd) page.
+If you have any questions, feel free to contact  
+**Silvia Varotto** at *silviafrancesca.varotto at entpe.fr*,  
+**Bahman Madadi** at *bahman.madadi at entpe.fr*, or  
+**Cathy Wu** at *cathywu at mit.edu*.
+
+You may also request to join our  
+[mailing list](https://groups.google.com/g/rerite/).
