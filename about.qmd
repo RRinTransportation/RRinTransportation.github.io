@@ -2,7 +2,7 @@
 title: "About RERITE"
 ---
 
-![](images/logo.jpg){width=61.8% fig-align="center"}
+![](images/logo.jpg){width=30.9% fig-align="center"}
 
 We are a group of volunteers who are passionate about practicing and promoting Reproducible Research (RR) in Transportation Engineering. View our hands-on **tutorial** [here](https://www.rerite.org/itsc24-rr-tutorial/). 
 
