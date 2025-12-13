@@ -1,0 +1,18 @@
+---
+title: "IVS 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles"
+date: 2026-06-22
+categories: [workshop]
+---
+
+We will organize a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 2026, titled “Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds.”
+
+## Scope
+Intelligent vehicle research is benefiting greatly from open datasets, benchmarks and testbeds. Without trustworthy datasets, transparent benchmarks, and credible testbeds, the field can’t measure progress, let alone accelerate it. This half-day workshop brings together open dataset contributors, benchmark creators, testbed operators, and many open science practitioners to bridge that gap head-on. The session highlights emerging open datasets, large-scale simulation and evaluation frameworks, and next-generation physical and virtual testbeds that enable reproducible, comparable, and interpretable research in intelligent vehicles. Through a set of plenary talks and three focused panels, participants will examine what data is still missing despite industry-scale collections, what we should be measuring when we design benchmarks, and where future investments in testbeds can most effectively raise the rigor and trustworthiness of the community’s work. The workshop targets to define concrete, field-wide steps for building an open, reproducible foundation for intelligent vehicle research.
+
+## Organizers
+- Junyi Ji, Vanderbilt University, 1025 16th Ave S, Nashville, TN, USA.
+- Yongqi Dong, RWTH Aachen, Mies-van-der-Rohe-Str. 1, Aachen, DE.
+- Danjue Chen, NC State University, Fitts-Woolard Hall, Raleigh, NC, USA.
+- Zuduo Zheng, University of Queensland, Hawken Building, Brisbane, AU.
+- Nicolas Saunier,  Polytechnique Montréal, Montréal Québec, CA.
+- Cathy Wu, MIT, 77 Massachusetts Avenue, Cambridge, MA, USA.

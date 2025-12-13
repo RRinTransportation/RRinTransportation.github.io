@@ -1,0 +1,19 @@
+---
+title: "TRS Rotterdam Presentation: LLMs Assess Data & Code Availability"
+date: 2025-04-15
+categories: [presentation, methodology, llm]
+status: past
+---
+
+Ruth Lu, an undergraduate researcher at MIT from our working group, gave our first conference presentation at the Transportation Research Symposium in Rotterdam, The Netherlands! We use Large Language Models (LLMs) to assess the state of data and code availability in transportation research.
+
+**Research Focus**
+- Automated assessment of data availability in papers
+- Code reproducibility metrics
+- Insights into open science adoption in transportation
+
+This presentation highlighted innovative uses of AI in evaluating reproducibility practices and supporting the shift towards open science.
+
+## Gallery
+
+![Ruth Lu presented our joint efforts. Here's a story of how a Computer Science undergraduate, working with Transporation colleagues, is leveraging AI tools to help accelerate progress in the field. (Photo credit: Dr. Rakhi Manohar Mepparambath)](../images/TRS2025/TRS-2025.jpg)
