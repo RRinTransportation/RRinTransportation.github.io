@@ -28,3 +28,12 @@ title: "Team"
   *ETH Zürich*
 
 ## Members
+
+- Mostafa Ameli, Université Gustave Eiffel: Volunteer researcher
+- Linda Belkessac, Université Gustave Eiffel: Volunteer researcher
+- Yongqi Dong, Delft University of Technology: Volunteer researcher
+- Junyi Ji, Vanderbilt University: Volunteer researcher
+- Ruth Lu, Massachusetts Institute of Technology: Volunteer researcher
+- Gregory S. Macfarlane, Brigham Young University: Volunteer researcher
+- Nicolas Saunier, Polytechnique Montréal: Volunteer researcher
+- Liming Wang, Portland State University: Volunteer researcher
