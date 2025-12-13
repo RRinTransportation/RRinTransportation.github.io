@@ -42,18 +42,12 @@ ul.task-list li input[type="checkbox"] {
 
 <body>
 
-<nav class="navbar" aria-label="Primary navigation">
-  <div class="container">
+<nav class="navbar">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
     <a class="navbar-brand" href="../index.html" aria-label="Home">
       <img src="../images/logo_png.png" alt="RERITE Logo">
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-      <span class="sr-only">Toggle navigation menu</span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
-    <ul id="primary-nav" class="navbar-nav">
+    <ul class="navbar-nav">
       <li><a class="nav-link" href="../index.html">Home</a></li>
       <li><a class="nav-link" href="../about.html">About</a></li>
       <li><a class="nav-link" href="../team.html">Team</a></li>
@@ -93,17 +87,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 </div>
-<script>
-  const navToggle = document.querySelector('.nav-toggle');
-  const primaryNav = document.getElementById('primary-nav');
-  if (navToggle && primaryNav) {
-    navToggle.addEventListener('click', () => {
-      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', (!isExpanded).toString());
-      primaryNav.classList.toggle('is-open');
-    });
-  }
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
