@@ -42,7 +42,7 @@ We're guest-editing a topical collection on "Reproducible Research in Transporta
 <div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
-Sep 2025
+Nov 2025
 :::
 
 ### [ITSC 2025 Tutorial Success](activities/2025-11-18-itsc25-tutorial.qmd)
