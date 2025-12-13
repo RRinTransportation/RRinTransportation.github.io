@@ -22,6 +22,13 @@ title: "Team"
 <div id="members-grid" class="grid">
 </div>
 
+## Friends
+
+> A huge thank-you to everyone who has helped build RERITE along the way.
+
+<div id="friends-grid" class="grid">
+</div>
+
 ```{=html}
 <style>
 .role-filter {
@@ -138,6 +145,10 @@ title: "Team"
   background: #7E57C2;
 }
 
+.role-dot.editor {
+  background: #FF7043;
+}
+
 .role-dot.all {
   background: #9E9E9E;
 }
@@ -155,6 +166,12 @@ title: "Team"
   margin-top: auto;
 }
 
+.card-note {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
 .team-card.hidden {
   display: none;
 }
@@ -164,8 +181,8 @@ title: "Team"
 const teamData = {
   steering_committee: [
     { name: "Dr. Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Chair"] },
-    { name: "Dr. Xuesong (Simon) Zhou", affiliation: "Arizona State University", roles: ["Vice-Chair"] },
-    { name: "Dr. Bidisha Ghosh", affiliation: "Trinity College Dublin", roles: ["Vice-Chair"] },
+    { name: "Dr. Xuesong (Simon) Zhou", affiliation: "Arizona State University", roles: ["Vice-Chair", "Major Event Coordinator"] },
+    { name: "Dr. Bidisha Ghosh", affiliation: "Trinity College Dublin", roles: ["Vice-Chair", "Major Event Coordinator"] },
     { name: "Dr. Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Communication Officer"] },
     { name: "Dr. Bahman Madadi", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Communication Officer"] },
     { name: "Zhe Fu", affiliation: "University of California, Berkeley", roles: ["Junior Researcher Engagement Officer"] },
@@ -176,21 +193,54 @@ const teamData = {
     { name: "Linda Belkessac", affiliation: "Université Gustave Eiffel", roles: ["Volunteer Researcher"] },
     { name: "Danjue Chen", affiliation: "NC State University", roles: ["Workshop"]},
     { name: "Yongqi Dong", affiliation: "Delft University of Technology", roles: ["Volunteer Researcher", "Workshop"] },
+    { name: "Bidisha Ghosh", affiliation: "Trinity College Dublin", roles: ["Tutorial"] },
     { name: "Junyi Ji", affiliation: "Vanderbilt University", roles: ["Volunteer Researcher", "Website Maintainer", "Workshop", "Tutorial"] },
+    { name: "Irene Martínez Josemaría", affiliation: "TU Delft", roles: ["Tutorial"]},
     { name: "Ruth Lu", affiliation: "Massachusetts Institute of Technology", roles: ["Volunteer Researcher"] },
     { name: "Gregory S. Macfarlane", affiliation: "Brigham Young University", roles: ["Volunteer Researcher"] },
-    { name: "Nicolas Saunier", affiliation: "Polytechnique Montréal", roles: ["Volunteer Researcher", "Workshop"] },
-    { name: "Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher"] },
+    { name: "Nicolas Saunier", affiliation: "Polytechnique Montréal", roles: ["Volunteer Researcher", "Workshop", "Editor"] },
+    { name: "Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher", "Editor"] },
     { name: "Bahman Madadi", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher"] },
     { name: "Liming Wang", affiliation: "Portland State University", roles: ["Volunteer Researcher"] },
-    { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial"]},
+    { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial", "Editor"]},
+    { name: "Zuduo Zheng", affiliation: "University of Queensland", roles: ["Workshop", "Tutorial", "Editor"]},
+    { name: "Christine Buisson", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Workshop", "Tutorial", "Editor"]},
+  ],
+  friends: [
+    { name: "Hongbo Zhao", affiliation: "The University of Queensland"},
+    { name: "Saeed Mohammadian", affiliation: "The University of Queensland"},
+    { name: "Marcello Montanino", affiliation: "University of Naples Federico II"},
+    { name: "Vincenzo Punzo", affiliation: "University of Naples Federico II"},
+    { name: "Peter Wagner", affiliation: "German Aerospace Center (DLR)"},
+    { name: "Elizabeth Sall", affiliation: "UrbanLabs LLC"},
+    { name: "Evangelos Mitsakis", affiliation: "CERTH - Hellenic Institute of Transport"},
+    { name: "Jiwon Kim", affiliation: "The University of Queensland"},
+    { name: "Kendra Levine", affiliation: "University of California, Berkeley"},
+    { name: "Peggi Knight", affiliation: "Iowa Department of Transportation"},
+    { name: "Shimul (Md. Mazharul) Haque", affiliation: "Queensland University of Technology"},
+    { name: "Yinhai Wang", affiliation: "University of Washington"}
   ]
+};
+
+// Utility to sort any list of people by last name to keep UI ordering consistent.
+const sortByLastName = (list = []) => {
+  return [...list].sort((a, b) => {
+    const lastA = (a.name || '').trim().split(/\s+/).pop().toLowerCase();
+    const lastB = (b.name || '').trim().split(/\s+/).pop().toLowerCase();
+    if (lastA === lastB) {
+      return (a.name || '').localeCompare(b.name || '');
+    }
+    return lastA.localeCompare(lastB);
+  });
 };
 
 document.addEventListener('DOMContentLoaded', function() {
   const steeringGrid = document.getElementById('steering-grid');
   const membersGrid = document.getElementById('members-grid');
   const roleButtonsContainer = document.getElementById('role-buttons');
+  const friendsGrid = document.getElementById('friends-grid');
+  const sortedMembers = sortByLastName(teamData.members || []);
+  const sortedFriends = sortByLastName(teamData.friends || []);
   
   // Generate steering committee cards
   teamData.steering_committee.forEach(member => {
@@ -208,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Collect all unique roles from members
   const allRoles = new Set();
-  teamData.members.forEach(member => {
+  sortedMembers.forEach(member => {
     member.roles.forEach(role => allRoles.add(role));
   });
   
@@ -229,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Generate member cards
-  teamData.members.forEach((member, idx) => {
+  sortedMembers.forEach((member, idx) => {
     const card = document.createElement('div');
     card.className = 'team-card';
     card.dataset.index = idx;
@@ -252,7 +302,32 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     membersGrid.appendChild(card);
   });
-  
+
+  // Friends
+  if (friendsGrid) {
+    if (teamData.friends && teamData.friends.length) {
+      sortedFriends.forEach(friend => {
+        const card = document.createElement('div');
+        card.innerHTML = `
+          <div class="card">
+            <h4 class="card-title">${friend.name}</h4>
+            <p class="card-affiliation"><em>${friend.affiliation || ''}</em></p>
+          </div>
+        `;
+        friendsGrid.appendChild(card);
+      });
+    } else {
+      const placeholder = document.createElement('div');
+      placeholder.innerHTML = `
+        <div class="card">
+          <h4 class="card-title">Know a friend we should thank?</h4>
+          <p class="card-affiliation"><em>Send us their name so we can celebrate them here.</em></p>
+        </div>
+      `;
+      friendsGrid.appendChild(placeholder);
+    }
+  }
+
   // Filter functionality
   const filterBtns = document.querySelectorAll('.filter-btn');
   const teamCards = document.querySelectorAll('.team-card');
