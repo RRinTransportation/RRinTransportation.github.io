@@ -42,10 +42,15 @@ ul.task-list li input[type="checkbox"] {
 <body>
 
 <nav class="navbar">
-  <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+  <div class="container">
     <a class="navbar-brand" href="./index.html" aria-label="Home">
       <img src="./images/logo_png.png" alt="RERITE Logo">
     </a>
+    <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="navbar-nav">
       <li><a class="nav-link" href="./index.html">Home</a></li>
       <li><a class="nav-link" href="./about.html">About</a></li>
@@ -64,6 +69,47 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </div>
 </nav>
+
+<script>
+  (function() {
+    const navbar = document.querySelector('.navbar');
+    const toggle = navbar?.querySelector('.navbar-toggle');
+    const navList = navbar?.querySelector('.navbar-nav');
+
+    if (!navbar || !toggle || !navList) {
+      return;
+    }
+
+    const closeMenu = () => {
+      navbar.classList.remove('navbar--open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    toggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isOpen = navbar.classList.toggle('navbar--open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navbar.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    navList.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        closeMenu();
+      }
+    });
+  })();
+</script>
 <div class="content-container">
 
 

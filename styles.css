@@ -154,14 +154,14 @@ a:hover {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: 100%;
   left: 0;
   min-width: 220px;
   background: #fff;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: var(--shadow-md);
-  padding: 1rem;
+  padding: 1.25rem 1rem 1rem;
   z-index: 1200;
 }
 
