@@ -5,4 +5,4 @@ categories: [call-for-papers]
 status: past
 ---
 
-We organized a Call for Papers “Towards Reproducible Transportation Research” at TRB 2023, sponsored by ACP50: Traffic Flow Theory and Characteristics (primary sponsoring committee) and AEP40: Transportation Network Modeling Committee. More details of this event can be found here. As a result, a Lectern Session at TRB2023 was dedicated to Reproducible Transportation Research.
+We organized a Call for Papers “Towards Reproducible Transportation Research” at TRB 2023, sponsored by ACP50: Traffic Flow Theory and Characteristics (primary sponsoring committee) and AEP40: Transportation Network Modeling Committee. More details of this event can be found [here](http://www.connectedandautonomoustransport.com/uploads/2/5/2/6/25268286/call_for_paper_reproducible_research_in_transportation_research_final.pdf). As a result, a Lectern Session at TRB2023 was dedicated to Reproducible Transportation Research.

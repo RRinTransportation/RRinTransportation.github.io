@@ -163,6 +163,22 @@ Brought together researchers and practitioners to advance reproducible research 
 </div>
 </div>
 
+<div class="timeline-post">
+<div class="post-timeline-marker">●</div>
+<div class="post-card">
+<div class="post-card-header">
+<span class="post-status past">Past</span>
+<span class="post-date">Jan 2023</span>
+</div>
+
+### [TRB 2023 Lectern Session](activities/2023-01-10-trb23-call-for-paper.qmd)
+
+We organized a Call for Papers “Towards Reproducible Transportation Research” at TRB 2023, sponsored by ACP50: Traffic Flow Theory and Characteristics (primary sponsoring committee) and AEP40: Transportation Network Modeling Committee. 
+
+[Read Full Post →](activities/2023-01-10-trb23-call-for-paper.qmd){.read-more}
+</div>
+</div>
+
 </div>
 
 </div>
