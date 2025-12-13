@@ -205,6 +205,7 @@ const teamData = {
     { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial", "Editor"]},
     { name: "Zuduo Zheng", affiliation: "University of Queensland", roles: ["Workshop", "Tutorial", "Editor"]},
     { name: "Christine Buisson", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Workshop", "Tutorial", "Editor"]},
+    { name: "Dr. Xuesong (Simon) Zhou", affiliation: "Arizona State University", roles: ["Tutorial"] },
   ],
   friends: [
     { name: "Hongbo Zhao", affiliation: "The University of Queensland"},
@@ -218,7 +219,10 @@ const teamData = {
     { name: "Kendra Levine", affiliation: "University of California, Berkeley"},
     { name: "Peggi Knight", affiliation: "Iowa Department of Transportation"},
     { name: "Shimul (Md. Mazharul) Haque", affiliation: "Queensland University of Technology"},
-    { name: "Yinhai Wang", affiliation: "University of Washington"}
+    { name: "Yinhai Wang", affiliation: "University of Washington"},
+    { name: "William Barbour", affiliation: "Vanderbilt University"},
+    { name: "Biagio Ciuffo", affiliation: "European Commission Joint Research Centre"},
+    { name: "David Levinson", affiliation: "University of Sydney"},
   ]
 };
 
