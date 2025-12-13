@@ -12,6 +12,99 @@ All content is in simple `.qmd` (Quarto Markdown) files:
 - `activities.qmd` - Past and current activities
 - `getinvolved.qmd` - How to get involved
 
+## Adding a New Post (Activity)
+
+On this website, “posts” are individual activity pages stored in `activities/` and linked from the timeline on `activities.qmd`.
+
+### 1) Create a new activity `.qmd` file
+
+1. Create a new file under `activities/`.
+2. Use the naming convention: `YYYY-MM-DD-short-slug.qmd`.
+
+Example: `activities/2026-03-15-my-event.qmd`
+
+Template:
+
+```markdown
+---
+title: "My Event Title"
+date: 2026-03-15
+categories: [workshop, tutorial]
+---
+
+One or two sentences describing the activity.
+
+## Details
+
+- Location:
+- Organizers:
+- Materials: [Link](https://example.com)
+
+## Gallery
+
+![Descriptive caption](../images/MyFolder/my-photo.jpg){width=900 fig-align=center}
+```
+
+Notes:
+- Use `../images/...` paths inside `activities/*.qmd` (because activity pages are one folder down).
+- Add images under `images/` (recommended in a subfolder like `images/ITSC2026/`).
+
+### 2) Add the post to the Activities timeline
+
+Open `activities.qmd` and add a new timeline card that links to your post.
+
+There are two sections:
+- **Ongoing & Future** (open marker `○`)
+- **Past Activities** (filled marker `●`)
+
+Copy/paste one of the existing blocks and update:
+- the visible month/year label (`<span class="post-date">...`)
+- the title and link target (`activities/YYYY-MM-DD-your-slug.qmd`)
+- the short summary text
+- the “Read Full Post” link
+
+Minimal example (paste into the appropriate section):
+
+```html
+<div class="timeline-post">
+<div class="post-timeline-marker">●</div>
+<div class="post-card">
+<div class="post-card-header">
+<span class="post-status past">Past</span>
+<span class="post-date">Mar 2026</span>
+</div>
+
+### [My Event Title](activities/2026-03-15-my-event.qmd)
+
+One or two sentences describing the activity.
+
+[Read Full Post →](activities/2026-03-15-my-event.qmd){.read-more}
+</div>
+</div>
+```
+
+Tip: keep the timeline cards short; put full details (and images) on the activity page.
+
+### 3) Preview locally
+
+```bash
+quarto preview
+```
+
+### 4) Render and publish
+
+This repo publishes via GitHub Pages from the `docs/` folder.
+
+```bash
+quarto render
+```
+
+Then commit and push:
+- the new `activities/*.qmd` file
+- any new `images/...` assets
+- the updated `activities.qmd`
+- the generated HTML in `docs/` (including `docs/activities/...`)
+
 ### To Edit Content
 
 1. Edit the `.qmd` files directly (they're just markdown)
@@ -96,3 +189,6 @@ Tips:
 - Advanced: add `srcset`/`sizes` for multiple resolutions.
 
 The site auto-adds `loading="lazy"`, `decoding="async"`, and a responsive class via the image filter in `filters/image.lua`.
+
+## Contributors
+[Junyi Ji](https://www.jijunyi.com) - Website design and implementatio
