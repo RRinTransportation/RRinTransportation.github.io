@@ -7,6 +7,7 @@ page-layout: full
 ::: {.hero-section}
 ::: {.hero-content}
 ::: {.vision-box}
+**Our vision:** 
 A transportation community where open science, reproducible research and replicable studies are the norms, advancing scientific rigour, accelerating innovation and fostering translation into practice.
 :::
 
