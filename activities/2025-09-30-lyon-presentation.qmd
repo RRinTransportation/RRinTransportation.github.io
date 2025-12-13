@@ -5,7 +5,7 @@ categories: [presentation, publication]
 status: past
 ---
 
-Dr. Michail Makridis (ETH Zürich), the secretary of the RERITE steering committee, was invited to present their work entitled "Reproducibility in transportation research: First insights from transport simulation studies" at ENTPE in Lyon, France on 30th September, 2025.
+Dr. Michail Makridis (ETH Zürich), the secretary of the RERITE steering committee, was invited to present their work entitled ["Reproducibility in transportation research: First insights from transport simulation studies"](https://doi.org/10.1186/s12544-025-00718-9) at ENTPE in Lyon, France on 30th September, 2025, hosted by Silvia Francesca Varotto, Bahman Madadi and Christine Buisson.
 
 **Publication**
 The full paper is open access and is available [here](https://doi.org/10.1186/s12544-025-00718-9).

@@ -1,5 +1,5 @@
 ---
-title: "ITSC 2025 Tutorial Success"
+title: "ITSC 2025 Tutorial"
 date: 2025-09-15
 categories: [tutorial, reproducibility]
 image: images/ITSC2025/itsc25-room.jpg
@@ -9,7 +9,7 @@ We held a half-day tutorial "Reproducibility in Transportation Research 2.0 – 
 
 - Topic: Reproducible manuscripts with Quarto
 - Highlights: Live demos, templates, and best practices
-- Materials: [Slides + code](https://www.rerite.org/itsc25-rr-tutorial/)
+- Materials: [Website](https://zuduozheng.github.io/RERITE_TUTORIAL_2.0/)
 
 ## Gallery
 
