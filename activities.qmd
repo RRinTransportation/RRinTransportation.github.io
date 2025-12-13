@@ -29,9 +29,7 @@ We will organize a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 
 </div>
 </div>
 
-</div>
-
-
+<div class="timeline-post">
 <div class="post-timeline-marker ongoing">○</div>
 <div class="post-card">
 <div class="post-card-header">
