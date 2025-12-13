@@ -4,36 +4,278 @@ title: "Team"
 
 ## Steering Committee
 
-- **Chair**  
-  Dr. Cathy Wu  
-  *Massachusetts Institute of Technology (MIT)*
-
-- **Vice-Chair and Major Event Coordinators**  
-  Dr. Xuesong (Simon) Zhou  
-  *Arizona State University*  
-  Dr. Bidisha Ghosh  
-  *Trinity College Dublin*
-
-- **Communication Officers (Joint)**  
-  Dr. Silvia Francesca Varotto  
-  Dr. Bahman Madadi  
-  *École Nationale des Travaux Publics de l'État, LICIT-ECO7*
-
-- **Junior Researcher Engagement Officer**  
-  Zhe Fu  
-  *University of California, Berkeley*
-
-- **Secretary**  
-  Dr. Michail Makridis  
-  *ETH Zürich*
+```{=html}
+<div id="steering-grid" class="grid">
+</div>
+```
 
 ## Members
 
-- Mostafa Ameli, Université Gustave Eiffel: Volunteer researcher
-- Linda Belkessac, Université Gustave Eiffel: Volunteer researcher
-- Yongqi Dong, Delft University of Technology: Volunteer researcher
-- Junyi Ji, Vanderbilt University: Volunteer researcher
-- Ruth Lu, Massachusetts Institute of Technology: Volunteer researcher
-- Gregory S. Macfarlane, Brigham Young University: Volunteer researcher
-- Nicolas Saunier, Polytechnique Montréal: Volunteer researcher
-- Liming Wang, Portland State University: Volunteer researcher
+> We keep this list current — if we missed you, please let us know.
+
+<div class="role-filter">
+  <strong>Filter by role:</strong>
+  <div id="role-buttons" class="btn-group">
+  </div>
+</div>
+
+<div id="members-grid" class="grid">
+</div>
+
+```{=html}
+<style>
+.role-filter {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.role-filter strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-btn:hover {
+  background: #f0f0f0;
+}
+
+.filter-btn.active {
+  background: #2B7A9B;
+  color: white;
+  border-color: #2B7A9B;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  grid-auto-rows: 1fr;
+}
+
+.grid > div {
+  display: flex;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-role {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #2B7A9B;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.role-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2B7A9B;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.role-dot.volunteer-researcher {
+  background: #4CAF50;
+}
+
+.role-dot.website-maintainer {
+  background: #F44336;
+}
+
+.role-dot.workshop {
+  background: #FFC107;
+}
+
+.role-dot.tutorial {
+  background: #7E57C2;
+}
+
+.role-dot.all {
+  background: #9E9E9E;
+}
+
+.member-roles {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.card-affiliation {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: auto;
+}
+
+.team-card.hidden {
+  display: none;
+}
+</style>
+
+<script>
+const teamData = {
+  steering_committee: [
+    { name: "Dr. Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Chair"] },
+    { name: "Dr. Xuesong (Simon) Zhou", affiliation: "Arizona State University", roles: ["Vice-Chair"] },
+    { name: "Dr. Bidisha Ghosh", affiliation: "Trinity College Dublin", roles: ["Vice-Chair"] },
+    { name: "Dr. Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Communication Officer"] },
+    { name: "Dr. Bahman Madadi", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Communication Officer"] },
+    { name: "Zhe Fu", affiliation: "University of California, Berkeley", roles: ["Junior Researcher Engagement Officer"] },
+    { name: "Dr. Michail Makridis", affiliation: "ETH Zürich", roles: ["Secretary"] }
+  ],
+  members: [
+    { name: "Mostafa Ameli", affiliation: "Université Gustave Eiffel", roles: ["Volunteer Researcher"] },
+    { name: "Linda Belkessac", affiliation: "Université Gustave Eiffel", roles: ["Volunteer Researcher"] },
+    { name: "Danjue Chen", affiliation: "NC State University", roles: ["Workshop"]},
+    { name: "Yongqi Dong", affiliation: "Delft University of Technology", roles: ["Volunteer Researcher", "Workshop"] },
+    { name: "Junyi Ji", affiliation: "Vanderbilt University", roles: ["Volunteer Researcher", "Website Maintainer", "Workshop", "Tutorial"] },
+    { name: "Ruth Lu", affiliation: "Massachusetts Institute of Technology", roles: ["Volunteer Researcher"] },
+    { name: "Gregory S. Macfarlane", affiliation: "Brigham Young University", roles: ["Volunteer Researcher"] },
+    { name: "Nicolas Saunier", affiliation: "Polytechnique Montréal", roles: ["Volunteer Researcher", "Workshop"] },
+    { name: "Silvia Francesca Varotto", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher"] },
+    { name: "Bahman Madadi", affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7", roles: ["Volunteer Researcher"] },
+    { name: "Liming Wang", affiliation: "Portland State University", roles: ["Volunteer Researcher"] },
+    { name: "Cathy Wu", affiliation: "Massachusetts Institute of Technology (MIT)", roles: ["Volunteer Researcher", "Workshop", "Tutorial"]},
+  ]
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  const steeringGrid = document.getElementById('steering-grid');
+  const membersGrid = document.getElementById('members-grid');
+  const roleButtonsContainer = document.getElementById('role-buttons');
+  
+  // Generate steering committee cards
+  teamData.steering_committee.forEach(member => {
+    const card = document.createElement('div');
+    const rolesHtml = member.roles.map(role => `<p class="card-role"><span class="role-dot"></span>${role}</p>`).join('');
+    card.innerHTML = `
+      <div class="card">
+        <h4 class="card-title">${member.name}</h4>
+        ${rolesHtml}
+        <p class="card-affiliation"><em>${member.affiliation}</em></p>
+      </div>
+    `;
+    steeringGrid.appendChild(card);
+  });
+  
+  // Collect all unique roles from members
+  const allRoles = new Set();
+  teamData.members.forEach(member => {
+    member.roles.forEach(role => allRoles.add(role));
+  });
+  
+  // Create filter buttons
+  const allBtn = document.createElement('button');
+  allBtn.className = 'filter-btn active';
+  allBtn.innerHTML = '<span class="role-dot all"></span>All';
+  allBtn.dataset.role = 'all';
+  roleButtonsContainer.appendChild(allBtn);
+  
+  Array.from(allRoles).sort().forEach(role => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    const roleClass = role.toLowerCase().replace(/\s+/g, '-');
+    btn.innerHTML = `<span class="role-dot ${roleClass}"></span>${role}`;
+    btn.dataset.role = role;
+    roleButtonsContainer.appendChild(btn);
+  });
+  
+  // Generate member cards
+  teamData.members.forEach((member, idx) => {
+    const card = document.createElement('div');
+    card.className = 'team-card';
+    card.dataset.index = idx;
+    card.dataset.roles = member.roles.join('|');
+    
+    // Create role dots only (no text)
+    const rolesDots = member.roles.map(role => {
+      const roleClass = role.toLowerCase().replace(/\s+/g, '-');
+      return `<span class="role-dot ${roleClass}" title="${role}"></span>`;
+    }).join('');
+    
+    card.innerHTML = `
+      <div class="card">
+        <h4 class="card-title">${member.name}</h4>
+        <div class="member-roles">
+          ${rolesDots}
+        </div>
+        <p class="card-affiliation"><em>${member.affiliation}</em></p>
+      </div>
+    `;
+    membersGrid.appendChild(card);
+  });
+  
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const teamCards = document.querySelectorAll('.team-card');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const selectedRole = this.dataset.role;
+      
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter cards
+      teamCards.forEach(card => {
+        const cardRoles = card.dataset.roles.split('|');
+        if (selectedRole === 'all' || cardRoles.includes(selectedRole)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+</script>
+```

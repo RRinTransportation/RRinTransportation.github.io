@@ -1,0 +1,107 @@
+steering_committee:
+  - name: "Dr. Cathy Wu"
+    affiliation: "Massachusetts Institute of Technology (MIT)"
+    roles:
+      - "Chair"
+    image: null
+    bio: null
+
+  - name: "Dr. Xuesong (Simon) Zhou"
+    affiliation: "Arizona State University"
+    roles:
+      - "Vice-Chair"
+    image: null
+    bio: null
+
+  - name: "Dr. Bidisha Ghosh"
+    affiliation: "Trinity College Dublin"
+    roles:
+      - "Vice-Chair"
+    image: null
+    bio: null
+
+  - name: "Dr. Silvia Francesca Varotto"
+    affiliation: null
+    roles:
+      - "Communication Officer"
+    image: null
+    bio: null
+
+  - name: "Dr. Bahman Madadi"
+    affiliation: "École Nationale des Travaux Publics de l'État, LICIT-ECO7"
+    roles:
+      - "Communication Officer"
+    image: null
+    bio: null
+
+  - name: "Zhe Fu"
+    affiliation: "University of California, Berkeley"
+    roles:
+      - "Junior Researcher Engagement Officer"
+    image: null
+    bio: null
+
+  - name: "Dr. Michail Makridis"
+    affiliation: "ETH Zürich"
+    roles:
+      - "Secretary"
+    image: null
+    bio: null
+
+members:
+  - name: "Mostafa Ameli"
+    affiliation: "Université Gustave Eiffel"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Linda Belkessac"
+    affiliation: "Université Gustave Eiffel"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Yongqi Dong"
+    affiliation: "Delft University of Technology"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Junyi Ji"
+    affiliation: "Vanderbilt University"
+    roles:
+      - "Volunteer Researcher"
+      - "Website Maintainer"
+    image: null
+    bio: null
+
+  - name: "Ruth Lu"
+    affiliation: "Massachusetts Institute of Technology"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Gregory S. Macfarlane"
+    affiliation: "Brigham Young University"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Nicolas Saunier"
+    affiliation: "Polytechnique Montréal"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
+
+  - name: "Liming Wang"
+    affiliation: "Portland State University"
+    roles:
+      - "Volunteer Researcher"
+    image: null
+    bio: null
