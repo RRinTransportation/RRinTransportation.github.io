@@ -17,3 +17,8 @@ The RERITE Working Group envisions a future in which **every study** in **transp
 *To advance reproducible research practices in transportation engineering by promoting open science principles, developing best practices, and fostering community engagement.*
 
 The core mission of the RERITE Working Group is to **champion openness**, **transparency** and **rigour** in **transportation research**. This mission involves (1) raising awareness regarding the importance of reproducibility, (2) providing training and resources to support data and code sharing, and (3) collaborating with key stakeholders to remove barriers to transparency. RERITE strongly believes that "transparency is superior to trust" ([Munafo et al., 2017](https://www.nature.com/articles/s41562-016-0021)) - all supporting data, methods, and codes should be openly available so that results can be independently verified. By doing so, we can ensure research funded by public or private investment yields full credibility ([Wood and Schalkwyk, 2025](https://www.scirp.org/journal/paperinformation?paperid=140233#:~:text=troubling%20for%20many%20reasons%20particularly,20)). In summary, RERITE aims to foster a cultural shift towards fully integrating open science principles – open data and tools, rigorous methods, reproducible and replicable findings – into transportation engineering research for the long term.
+
+::: {.hero-cta style="margin-top: 3rem;"}
+[Get Involved](getinvolved.qmd){.btn .btn-primary}
+[Subscribe](https://forms.gle/9WFfjWJ8VifFrHaY8){.btn .btn-primary}
+:::

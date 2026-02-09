@@ -41,12 +41,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
 }
 
+/* Quarto page titles */
+#title-block-header,
+.quarto-title-block,
+.quarto-title,
+.quarto-title h1.title,
+h1.title,
+p.subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 1.5rem;
+}
+
 /* Quarto page subtitle */
 .quarto-title-block .subtitle,
 .quarto-title .subtitle,
 .subtitle {
   font-size: 1.25rem; /* larger subtitle across pages */
   color: var(--text-light);
+  text-align: center !important;
+  max-width: 800px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 h1 {
@@ -166,6 +183,21 @@ a:hover {
   background-color: rgba(43, 122, 155, 0.1);
   color: var(--primary-color) !important;
   text-decoration: none !important;
+}
+
+.nav-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 0.5rem 1.25rem !important;
+  border-radius: 50px;
+  margin-left: 0.5rem;
+  transition: var(--transition);
+}
+
+.nav-btn:hover {
+  background-color: var(--primary-dark) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
 
 .dropdown-toggle::after {
@@ -1139,6 +1171,73 @@ section {
 .involvement-card li {
   margin-bottom: 0.5rem;
   color: var(--text-light);
+}
+
+/* Fancy Table Styling */
+.fancy-table-container {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.fancy-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 0 !important;
+}
+
+.fancy-table th {
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-family: 'Cormorant', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+}
+
+.fancy-table td {
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-dark);
+  vertical-align: middle;
+}
+
+.fancy-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fancy-table tr:nth-child(even) {
+  background-color: rgba(43, 122, 155, 0.02);
+}
+
+.fancy-table tr:hover {
+  background-color: rgba(43, 122, 155, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.badge-status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-open {
+  background-color: #e6f4ea;
+  color: #1e7e34;
+}
+
+.badge-filled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid var(--border-color);
 }
 
 /* Footer */
