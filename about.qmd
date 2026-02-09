@@ -20,5 +20,5 @@ The core mission of the RERITE Working Group is to **champion openness**, **tran
 
 ::: {.hero-cta style="margin-top: 3rem;"}
 [Get Involved](getinvolved.qmd){.btn .btn-primary}
-[Subscribe](https://forms.gle/9WFfjWJ8VifFrHaY8){.btn .btn-primary}
+[Subscribe](https://groups.google.com/g/rerite/){.btn .btn-primary}
 :::

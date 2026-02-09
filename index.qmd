@@ -16,7 +16,7 @@ RERITE is a global working group of volunteers who are passionate about practici
 ::: {.hero-cta}
 [Learn About Our Mission](about.qmd){.btn .btn-primary}
 [Get Involved](getinvolved.qmd){.btn .btn-primary}
-[Subscribe](https://forms.gle/9WFfjWJ8VifFrHaY8){.btn .btn-primary}
+[Subscribe](https://groups.google.com/g/rerite/){.btn .btn-primary}
 :::
 :::
 :::
