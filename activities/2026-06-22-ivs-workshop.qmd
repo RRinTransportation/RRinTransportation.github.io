@@ -1,5 +1,5 @@
 ---
-title: "IVS 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles"
+title: "IEEE IV Symposium 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles"
 date: 2026-06-22
 categories: [workshop]
 ---
