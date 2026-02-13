@@ -19,7 +19,7 @@ Explore our past workshops, tutorials, and publications, along with ongoing init
 <span class="post-date">June 2026</span>
 </div>
 
-### [IVS 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](activities/2026-06-22-ivs-workshop.qmd)
+### [IEEE IV 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](activities/2026-06-22-ivs-workshop.qmd)
 
 We will organize a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 2026, titled “Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds.”
 
