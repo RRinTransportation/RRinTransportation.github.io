@@ -191,4 +191,4 @@ Tips:
 The site auto-adds `loading="lazy"`, `decoding="async"`, and a responsive class via the image filter in `filters/image.lua`.
 
 ## Contributors
-[Junyi Ji](https://www.jijunyi.com) - Website design and implementatio
+[Junyi Ji](https://www.jijunyi.com) - Website design and implementation
