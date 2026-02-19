@@ -2,7 +2,7 @@
 title: "Get Involved"
 ---
 
-We welcome anyone interested in advancing reproducible research in transportation! To express your interest, please fill out this [involvement survey](https://forms.gle/9WFfjWJ8VifFrHaY8).
+We welcome anyone interested in advancing reproducible research in transportation! To express your interest, please fill out this [involvement survey](https://docs.google.com/forms/d/e/1FAIpQLSeCnzBI1E76eOK-p_UTNsJrtcbflaLrngPwqyGkoD_Jd-T23g/viewform).
 
 ### Open Opportunities
 
