@@ -1177,7 +1177,9 @@ section {
 .fancy-table-container {
   margin: 2rem 0;
   border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
 }
@@ -1187,6 +1189,90 @@ section {
   border-collapse: collapse;
   background: white;
   margin: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .fancy-table {
+    min-width: 760px;
+  }
+
+  .fancy-table th {
+    padding: 0.9rem 0.75rem;
+    font-size: 1rem;
+  }
+
+  .fancy-table td {
+    padding: 0.9rem 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .badge-status {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .fancy-table-container {
+    overflow: visible;
+  }
+
+  .fancy-table {
+    min-width: 0;
+    background: transparent;
+  }
+
+  .fancy-table thead {
+    display: none;
+  }
+
+  .fancy-table tbody,
+  .fancy-table tr,
+  .fancy-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .fancy-table tr {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+  }
+
+  .fancy-table td {
+    display: grid;
+    grid-template-columns: minmax(115px, 42%) 1fr;
+    gap: 0.6rem;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fancy-table tr:last-child td {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fancy-table td:last-child {
+    border-bottom: none;
+  }
+
+  .fancy-table td::before {
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .fancy-table td:nth-child(1)::before { content: "Requesting Member"; }
+  .fancy-table td:nth-child(2)::before { content: "Role Needed"; }
+  .fancy-table td:nth-child(3)::before { content: "Skills / Requirements"; }
+  .fancy-table td:nth-child(4)::before { content: "Tasks"; }
+  .fancy-table td:nth-child(5)::before { content: "Status"; }
+
+  .fancy-table tr:nth-child(even),
+  .fancy-table tr:hover {
+    background: white;
+  }
 }
 
 .fancy-table th {
