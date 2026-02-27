@@ -21,7 +21,6 @@ Welcome to the first newsletter of the Reproducible Research in Transportation w
 - [Topical collection on Reproducible Research in Transportation](https://link.springer.com/collections/dgachijbgi) - This collection in European Transport Research Review aims to highlight the importance of reproducibility in transportation research, fostering advancements and enhancing the credibility of scientific findings. One study is already published, while others have been accepted recently or are still under review.
 
 ![](../images/Newsletter/2026-02/image2.png){width=100% fig-align="center"}
-
 ## What’s coming up
 
 - [IEEE IV Symposium 2026 Workshop](https://www.rerite.org/ivs-2026) (June 22, 2026) – Half-day session focused on open datasets, benchmarks, and testbeds in intelligent vehicle research.
@@ -34,8 +33,6 @@ As part of our initiative to promote transparency and reproducibility in transpo
 
 ### Call for volunteers
 We’re looking for volunteers to support several initiatives across communications, data, and open science. If you are interested in any of the roles listed below, please fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSeCnzBI1E76eOK-p_UTNsJrtcbflaLrngPwqyGkoD_Jd-T23g/viewform?usp=header).
-
-
 
 **Communication & Content**
 
