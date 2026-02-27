@@ -17,6 +17,8 @@ website:
         href: team.qmd
       - text: "Activities"
         href: activities.qmd
+      - text: "Newsletter"
+        href: newsletter.qmd
       - text: "Resources"
         menu:
           - text: "awesome-rerite"

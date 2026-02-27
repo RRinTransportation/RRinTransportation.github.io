@@ -1,0 +1,11 @@
+---
+title: "Newsletter"
+listing:
+  contents: newsletter
+  sort: "date desc"
+  type: default
+  sort-ui: false
+  filter-ui: false
+---
+
+Stay up to date with the latest news, activities, and resources from the RERITE Working Group.
