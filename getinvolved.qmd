@@ -22,13 +22,6 @@ If you are looking for specific ways to contribute, check out the current opport
   <tbody>
     <tr>
       <td>Comm Officer</td>
-      <td>Website Manager</td>
-      <td>Wordpress/HTML, basic design</td>
-      <td>Maintain site updates, fix broken links, improve layout.</td>
-      <td><span class="badge-status badge-filled">Filled</span></td>
-    </tr>
-    <tr>
-      <td>Comm Officer</td>
       <td>Digital Content Manager</td>
       <td>Graphic design, Copywriting</td>
       <td>Assist with social media calendars and newsletter drafts.</td>
