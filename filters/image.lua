@@ -41,6 +41,14 @@ function Image(el)
     add_attr(el, "alt", el.title)
   end
 
+  -- Enable lightbox/zoom for images unless excluded with class .no-zoom or .no-lightbox
+  if el.attributes["lightbox"] == nil then
+    local cls = el.attributes["class"] or ""
+    if not (string.find(" " .. cls .. " ", " no%-zoom ") or string.find(" " .. cls .. " ", " no%-lightbox ")) then
+      add_attr(el, "lightbox", "true")
+    end
+  end
+
   -- Optional: auto-generate sizes attribute for responsive layout
   -- If user provides sizes/srcset, respect them; otherwise, set reasonable default
   if el.attributes["sizes"] == nil then

@@ -35,6 +35,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 
@@ -128,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="newsletter-content">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/logo.jpg" class="img-fluid quarto-figure quarto-figure-center" style="max-width:50%px;height:auto;;width:50.0%" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/logo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/logo.jpg" class="img-fluid quarto-figure quarto-figure-center" style="max-width:50%px;height:auto;;width:50.0%" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px"></a></p>
 </figure>
 </div>
 <p>Dear RERITERs, Welcome to the first newsletter of the Reproducible Research in Transportation working group (RERITE). We’ll use this space to share brief updates, highlight opportunities to collaborate, and recognize the contributions that move our work forward. The goal is to keep it lightweight, useful, and easy to scan.</p>
@@ -138,13 +141,18 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/Newsletter/2026-02/image1.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/Newsletter/2026-02/image1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../images/Newsletter/2026-02/image1.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px"></a></p>
 </figure>
 </div>
 <ul>
 <li><a href="https://link.springer.com/collections/dgachijbgi">Topical collection on Reproducible Research in Transportation</a> - This collection in European Transport Research Review aims to highlight the importance of reproducibility in transportation research, fostering advancements and enhancing the credibility of scientific findings. One study is already published, while others have been accepted recently or are still under review.</li>
 </ul>
-<p><img src="../images/Newsletter/2026-02/image2.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"> ## What’s coming up</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/Newsletter/2026-02/image2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../images/Newsletter/2026-02/image2.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px"></a></p>
+</figure>
+</div>
+<h2 id="whats-coming-up" class="anchored">What’s coming up</h2>
 <ul>
 <li><a href="https://www.rerite.org/ivs-2026">IEEE IV Symposium 2026 Workshop</a> (June 22, 2026) – Half-day session focused on open datasets, benchmarks, and testbeds in intelligent vehicle research.</li>
 </ul>
@@ -182,7 +190,12 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.rerite.org/MOST/explorer">Data explorer</a>: a dashboard to explore papers with available data or code.</li>
 <li><a href="https://www.rerite.org/itsc24-rr-tutorial/">Hands-on Tutorial</a>: step-by-step guidance on reproducible workflows in transportation research.</li>
 </ul>
-<h2 id="section" class="anchored"><img src="../images/Newsletter/2026-02/image3.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="../images/Newsletter/2026-02/image3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../images/Newsletter/2026-02/image3.png" class="img-fluid quarto-figure quarto-figure-center" style="max-width:100%px;height:auto;;width:100.0%" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px"></a></p>
+</figure>
+</div>
+<hr>
 <p><strong>Questions or ideas?</strong></p>
 <p>Contact us: Silvia Varotto (silviafrancesca.varotto@entpe.fr), Communication officer</p>
 <p>Join our <a href="https://groups.google.com/g/rerite/">mailing list</a> and <a href="https://www.linkedin.com/groups/10084451">LinkedIn group</a>.</p>
@@ -594,6 +607,38 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

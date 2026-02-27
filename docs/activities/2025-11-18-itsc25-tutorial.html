@@ -34,6 +34,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 
@@ -128,25 +131,25 @@ ul.task-list li input[type="checkbox"] {
 <h2 id="gallery" class="anchored">Gallery</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/ITSC2025/cathy-opening.JPG" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/ITSC2025/cathy-opening.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Dr.&nbsp;Cathy Wu, chair of RERITE, delivering the opening remarks for the tutorial (Photo credit: Junyi Ji)"><img src="../images/ITSC2025/cathy-opening.JPG" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Dr.&nbsp;Cathy Wu, chair of RERITE, delivering the opening remarks for the tutorial (Photo credit: Junyi Ji)"></a></p>
 <figcaption>Dr.&nbsp;Cathy Wu, chair of RERITE, delivering the opening remarks for the tutorial (Photo credit: Junyi Ji)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/ITSC2025/cathy-zuduo-recap.JPG" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/ITSC2025/cathy-zuduo-recap.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Dr.&nbsp;Cathy Wu (chair of RERITE) and Dr.&nbsp;Zuduo Zheng (main organizer of our RERITE tutorial 2.0) recap the past tutorials (Photo credit: Junyi Ji)"><img src="../images/ITSC2025/cathy-zuduo-recap.JPG" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Dr.&nbsp;Cathy Wu (chair of RERITE) and Dr.&nbsp;Zuduo Zheng (main organizer of our RERITE tutorial 2.0) recap the past tutorials (Photo credit: Junyi Ji)"></a></p>
 <figcaption>Dr.&nbsp;Cathy Wu (chair of RERITE) and Dr.&nbsp;Zuduo Zheng (main organizer of our RERITE tutorial 2.0) recap the past tutorials (Photo credit: Junyi Ji)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/ITSC2025/zuduo.JPG" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/ITSC2025/zuduo.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Dr.&nbsp;Zuduo Zheng presenting on reproducible manuscripts (Photo credit: Junyi Ji)"><img src="../images/ITSC2025/zuduo.JPG" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Dr.&nbsp;Zuduo Zheng presenting on reproducible manuscripts (Photo credit: Junyi Ji)"></a></p>
 <figcaption>Dr.&nbsp;Zuduo Zheng presenting on reproducible manuscripts (Photo credit: Junyi Ji)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/ITSC2025/group.JPG" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/ITSC2025/group.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Group photo of the organizers and some of the attendees at the end of the tutorial, from left to right: Hongbo Zhao (UQ), Dr.&nbsp;Saeed Mohammadian (UQ), Dr.&nbsp;Zuduo Zheng (UQ), Dr.&nbsp;Cathy Wu (MIT), Junyi Ji (Vanderbilt), and attendees. (Photo credit: Dan Work)"><img src="../images/ITSC2025/group.JPG" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Group photo of the organizers and some of the attendees at the end of the tutorial, from left to right: Hongbo Zhao (UQ), Dr.&nbsp;Saeed Mohammadian (UQ), Dr.&nbsp;Zuduo Zheng (UQ), Dr.&nbsp;Cathy Wu (MIT), Junyi Ji (Vanderbilt), and attendees. (Photo credit: Dan Work)"></a></p>
 <figcaption>Group photo of the organizers and some of the attendees at the end of the tutorial, from left to right: Hongbo Zhao (UQ), Dr.&nbsp;Saeed Mohammadian (UQ), Dr.&nbsp;Zuduo Zheng (UQ), Dr.&nbsp;Cathy Wu (MIT), Junyi Ji (Vanderbilt), and attendees. (Photo credit: Dan Work)</figcaption>
 </figure>
 </div>
@@ -557,6 +560,38 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

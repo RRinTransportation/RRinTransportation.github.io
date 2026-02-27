@@ -34,6 +34,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 
@@ -130,13 +133,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 id="gallery" class="anchored">Gallery</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/Lyon2025/MM_lyon251.jpg" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/Lyon2025/MM_lyon251.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Dr.&nbsp;Michail Makridis at ENTPE with Christine Buisson, Bahman Madadi and Silvia Varotto."><img src="../images/Lyon2025/MM_lyon251.jpg" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Dr.&nbsp;Michail Makridis at ENTPE with Christine Buisson, Bahman Madadi and Silvia Varotto."></a></p>
 <figcaption>Dr.&nbsp;Michail Makridis at ENTPE with Christine Buisson, Bahman Madadi and Silvia Varotto.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/Lyon2025/MM_lyon252.jpg" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/Lyon2025/MM_lyon252.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Dr.&nbsp;Michail Makridis presenting at ENTPE, Lyon."><img src="../images/Lyon2025/MM_lyon252.jpg" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Dr.&nbsp;Michail Makridis presenting at ENTPE, Lyon."></a></p>
 <figcaption>Dr.&nbsp;Michail Makridis presenting at ENTPE, Lyon.</figcaption>
 </figure>
 </div>
@@ -547,6 +550,38 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

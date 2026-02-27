@@ -1374,6 +1374,12 @@ img {
   border-radius: 8px;
 }
 
+/* Lightbox/Zoom-in cursor for clickable images */
+img[lightbox], 
+.lightbox img {
+  cursor: zoom-in;
+}
+
 /* Generic responsive image utility class for consistency */
 .img-responsive {
   display: block;

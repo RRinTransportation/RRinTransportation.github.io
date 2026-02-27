@@ -34,6 +34,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html-734cb40618f438257b19a1e532635a32.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 
@@ -130,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 id="gallery" class="anchored">Gallery</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="../images/TRS2025/TRS-2025.jpg" class="img-fluid" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 768px"></p>
+<p><a href="../images/TRS2025/TRS-2025.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Ruth Lu presented our joint efforts. Here’s a story of how a Computer Science undergraduate, working with Transporation colleagues, is leveraging AI tools to help accelerate progress in the field. (Photo credit: Dr.&nbsp;Rakhi Manohar Mepparambath)"><img src="../images/TRS2025/TRS-2025.jpg" class="img-fluid" loading="lazy" decoding="async" data-lightbox="true" sizes="(max-width: 768px) 100vw, 768px" alt="Ruth Lu presented our joint efforts. Here’s a story of how a Computer Science undergraduate, working with Transporation colleagues, is leveraging AI tools to help accelerate progress in the field. (Photo credit: Dr.&nbsp;Rakhi Manohar Mepparambath)"></a></p>
 <figcaption>Ruth Lu presented our joint efforts. Here’s a story of how a Computer Science undergraduate, working with Transporation colleagues, is leveraging AI tools to help accelerate progress in the field. (Photo credit: Dr.&nbsp;Rakhi Manohar Mepparambath)</figcaption>
 </figure>
 </div>
@@ -541,6 +544,38 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

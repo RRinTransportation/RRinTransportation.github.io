@@ -28,6 +28,7 @@ website:
 
 format:
   html:
+    lightbox: true
     theme: none
     css: styles.css
     toc: false
