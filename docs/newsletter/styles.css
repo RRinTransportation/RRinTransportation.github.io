@@ -1615,9 +1615,11 @@ figure img.img-responsive {
   max-width: 800px;
   margin: 0 auto;
   background: white;
-  padding: 3rem;
+  padding: 1.5rem;
   border-radius: 16px;
   box-shadow: var(--shadow-md);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .newsletter-content h2 {
