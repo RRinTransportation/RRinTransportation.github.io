@@ -16,11 +16,12 @@ Welcome to the first newsletter of the Reproducible Research in Transportation w
 
 - [Measuring Open Science in Transportation (MOST)](https://www.rerite.org/MOST) - Our new [study](https://doi.org/10.48550/arXiv.2601.14429) utilizes Large Language Models (LLMs) to measure the adoption of open science practices across thousands of transportation research papers. A [platform](https://www.rerite.org/MOST/explorer.html) allows readers and reviewers to explore our findings and verify the data and code availability state in the field.
 
-![](../images/Newsletter/2026-02/image1.png){width=100% fig-align="center"}
+
+![Fig. 1: Summary of the features we are looking at (left) and the [dashboard](https://www.rerite.org/MOST/explorer.html) we developed (right)](../images/Newsletter/2026-02/image1.png){width=100% fig-align="center"}
 
 - [Topical collection on Reproducible Research in Transportation](https://link.springer.com/collections/dgachijbgi) - This collection in European Transport Research Review aims to highlight the importance of reproducibility in transportation research, fostering advancements and enhancing the credibility of scientific findings. One study is already published, while others have been accepted recently or are still under review.
 
-![](../images/Newsletter/2026-02/image2.png){width=100% fig-align="center"}
+![Fig. 2: Findings from the paper [**Revisiting reproducibility in transportation simulation studies**](https://link.springer.com/article/10.1186/s12544-025-00718-9)](../images/Newsletter/2026-02/image2.png){width=100% fig-align="center"}
 
 ## What’s coming up
 
@@ -64,7 +65,7 @@ We’re looking for volunteers to support several initiatives across communicati
 - [Data explorer](https://www.rerite.org/MOST/explorer): a dashboard to explore papers with available data or code.
 - [Hands-on Tutorial](https://www.rerite.org/itsc24-rr-tutorial/): step-by-step guidance on reproducible workflows in transportation research. 
 
-![](../images/Newsletter/2026-02/image3.png){width=100% fig-align="center"}
+![Fig. 3: [awesome RERITE](https://www.rerite.org/awesome-rerite) page (left) and our [tutorial](https://www.rerite.org/itsc24-rr-tutorial) page (right)](../images/Newsletter/2026-02/image3.png){width=100% fig-align="center"}
 
 ---
 
