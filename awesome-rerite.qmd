@@ -59,7 +59,7 @@ A curated list of awesome open datasets and benchmarks in transportation researc
 
 - **[Swissmetro](https://transp-or.epfl.ch/pythonbiogeme/examples_swissmetro.html)** — canonical dataset for testing discrete choice specifications (thanks again to Siqi).
 
-## Traffic Dynamics and Control
+## Traffic Dynamics
 
 ### Vehicle Trajectory Data
 
@@ -78,11 +78,18 @@ A curated list of awesome open datasets and benchmarks in transportation researc
 - **Dome Traffic Jam Experiment** — [circular arena trajectories](https://github.com/mathematical-society-of-traffic-flow/mathematical-society-of-traffic-flow.github.io/raw/refs/heads/main/assets/data/trajectory.zip).
 - **[Arizona Ring Experiments Dataset (ARED)](https://ir.vanderbilt.edu/items/2e6f1c05-0174-4abd-b71c-e7e40eae0ce3)** — autonomous-vehicle dampening experiments from Vanderbilt.
 
+## Traffic control
+
 ### Freeway Traffic Control
 - **[Flow-Lite](https://github.com/mit-wu-lab/automatic_vehicular_control)** — lightweight sibling of [Flow](https://flow-project.github.io) without RLlib, ideal for rapid freeway controller prototyping.
 
 ### Urban Traffic Control
 - **[Intersection Zoo](https://github.com/mit-wu-lab/IntersectionZoo)** — ICLR 2025 benchmark for multi-agent eco-driving at signalized intersections.
+
+
+## Sensor network
+
+- [Intersection Safety Challenge Stage 1B Validation Data](https://data.transportation.gov/Roadways-and-Bridges/Intersection-Safety-Challenge-Stage-1B-Validation-/j58q-ymi4/about_data)
 
 ## Traffic Simulation
 _General-purpose simulators that complement the DTA-focused resources above._
@@ -141,7 +148,7 @@ If you have a dataset or benchmark to contribute, you can:
 
 ---
 Maintained by [Junyi Ji](https://www.jijunyi.com/), Views are my own.
-Last updated: Septempber 15, 2025.
+Last updated: March 15, 2026
 
 ```{=html}
 <style>
