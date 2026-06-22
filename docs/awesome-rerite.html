@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-06-22">
 
 <title>awesome-rerite – RERITE Working Group</title>
 <style>
@@ -116,7 +117,11 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <div class="content-container">
 
+<header id="title-block-header">
 
+
+<p class="date">June 22, 2026</p>
+</header>
 
 
 <h1 id="awesome-rerite">awesome-rerite</h1>
@@ -126,10 +131,11 @@ ul.task-list li input[type="checkbox"] {
     <strong>On this page</strong>
     <nav>
         <ol>
-            <li><a href="#how-to-contribute">How to Contribute</a></li>
             <li><a href="#transportation-demand-and-network-modeling">Transportation Demand &amp; Network Modeling</a></li>
             <li><a href="#discrete-choice-modeling">Discrete Choice Modeling</a></li>
-            <li><a href="#traffic-dynamics-and-control">Traffic Dynamics and Control</a></li>
+            <li><a href="#traffic-dynamics">Traffic Dynamics</a></li>
+            <li><a href="#traffic-control">Traffic Control</a></li>
+            <li><a href="#sensor-network">Sensor Network</a></li>
             <li><a href="#traffic-simulation">Traffic Simulation</a></li>
             <li><a href="#spatio-temporal-data-and-modeling">Spatio-Temporal Data and Modeling</a></li>
             <li><a href="#road-safety">Road Safety</a></li>
@@ -139,6 +145,7 @@ ul.task-list li input[type="checkbox"] {
             <li><a href="#data-standards-in-transportation">Data Standards in Transportation</a></li>
             <li><a href="#notable-figures-in-transportation">Notable Figures in Transportation</a></li>
             <li><a href="#miscellaneous">Miscellaneous</a></li>
+            <li><a href="#how-to-contribute">How to Contribute</a></li>
         </ol>
     </nav>
 </div>
@@ -155,6 +162,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <h3 id="tooling-workflows" class="anchored">Tooling &amp; Workflows</h3>
 <ul>
+<li><strong><a href="https://dataverse.harvard.edu/dataverse/global-urban-street-networks">Global Urban Street Networks</a></strong> — updated and published repository containing street network models for all 10,351 urban areas worldwide (GraphML, GeoPackages, and node/edge lists), plus indicators and metadata. Journal article: <a href="https://doi.org/10.1177/23998083261446991">https://doi.org/10.1177/23998083261446991</a>. Source code: <a href="https://github.com/gboeing/street-network-models">https://github.com/gboeing/street-network-models</a>.</li>
 <li><strong><a href="https://osmnx.readthedocs.io/en/stable/">OSMnx</a></strong> — award-winning toolkit by <a href="https://geoffboeing.com/">Geoff Boeing</a> for downloading, modeling, and analyzing street networks.</li>
 <li><strong><a href="https://pypi.org/project/osm2gmns/1.0.0rc1/">osm2gmns</a></strong> — converts OpenStreetMap data into GMNS format; developed by Jiawei Lu and Xuesong (Simon) Zhou.</li>
 <li><strong><a href="https://github.com/asu-trans-ai-lab/DTALite">DTALite</a></strong> — ASU Transportation AI Lab’s macroscopic/mesoscopic AMS library that natively reads GMNS.</li>
@@ -196,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Dome Traffic Jam Experiment</strong> — <a href="https://github.com/mathematical-society-of-traffic-flow/mathematical-society-of-traffic-flow.github.io/raw/refs/heads/main/assets/data/trajectory.zip">circular arena trajectories</a>.</li>
 <li><strong><a href="https://ir.vanderbilt.edu/items/2e6f1c05-0174-4abd-b71c-e7e40eae0ce3">Arizona Ring Experiments Dataset (ARED)</a></strong> — autonomous-vehicle dampening experiments from Vanderbilt.</li>
 </ul>
-<h2 id="traffic-control" class="anchored">Traffic control</h2>
+<h2 id="traffic-control" class="anchored">Traffic Control</h2>
 <h3 id="freeway-traffic-control" class="anchored">Freeway Traffic Control</h3>
 <ul>
 <li><strong><a href="https://github.com/mit-wu-lab/automatic_vehicular_control">Flow-Lite</a></strong> — lightweight sibling of <a href="https://flow-project.github.io">Flow</a> without RLlib, ideal for rapid freeway controller prototyping.</li>
@@ -205,9 +213,9 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong><a href="https://github.com/mit-wu-lab/IntersectionZoo">Intersection Zoo</a></strong> — ICLR 2025 benchmark for multi-agent eco-driving at signalized intersections.</li>
 </ul>
-<h2 id="sensor-network" class="anchored">Sensor network</h2>
+<h2 id="sensor-network" class="anchored">Sensor Network</h2>
 <ul>
-<li><a href="https://data.transportation.gov/Roadways-and-Bridges/Intersection-Safety-Challenge-Stage-1B-Validation-/j58q-ymi4/about_data">Intersection Safety Challenge Stage 1B Validation Data</a></li>
+<li><strong><a href="https://data.transportation.gov/Roadways-and-Bridges/Intersection-Safety-Challenge-Stage-1B-Validation-/j58q-ymi4/about_data">Intersection Safety Challenge Stage 1B Validation Data</a></strong> — validation data from USDOT’s Intersection Safety Challenge.</li>
 </ul>
 <h2 id="traffic-simulation" class="anchored">Traffic Simulation</h2>
 <p><em>General-purpose simulators that complement the DTA-focused resources above.</em></p>
@@ -267,8 +275,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Contact me via <a href="junyi.ji@vanderbilt.edu">email</a></p></li>
 </ol>
 <hr>
-<p>Maintained by <a href="https://www.jijunyi.com/">Junyi Ji</a>, Views are my own. Last updated: March 15, 2026</p>
+<p>Maintained by <a href="https://www.jijunyi.com/">Junyi Ji</a>, Views are my own. Last updated: June 22, 2026</p>
 <style>
+/* Hide the auto-generated title-block date; we render "Last updated" below */
+#title-block-header {
+    display: none;
+}
+
 /* Floating TOC styling */
 .floating-toc {
     background: #f5fbfe;

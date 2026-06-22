@@ -1,3 +1,8 @@
+---
+date: last-modified
+date-format: "MMMM D, YYYY"
+---
+
 # awesome-rerite
 A curated list of awesome open datasets and benchmarks in transportation research.
 
@@ -8,10 +13,11 @@ A curated list of awesome open datasets and benchmarks in transportation researc
     <strong>On this page</strong>
     <nav>
         <ol>
-            <li><a href="#how-to-contribute">How to Contribute</a></li>
             <li><a href="#transportation-demand-and-network-modeling">Transportation Demand &amp; Network Modeling</a></li>
             <li><a href="#discrete-choice-modeling">Discrete Choice Modeling</a></li>
-            <li><a href="#traffic-dynamics-and-control">Traffic Dynamics and Control</a></li>
+            <li><a href="#traffic-dynamics">Traffic Dynamics</a></li>
+            <li><a href="#traffic-control">Traffic Control</a></li>
+            <li><a href="#sensor-network">Sensor Network</a></li>
             <li><a href="#traffic-simulation">Traffic Simulation</a></li>
             <li><a href="#spatio-temporal-data-and-modeling">Spatio-Temporal Data and Modeling</a></li>
             <li><a href="#road-safety">Road Safety</a></li>
@@ -21,6 +27,7 @@ A curated list of awesome open datasets and benchmarks in transportation researc
             <li><a href="#data-standards-in-transportation">Data Standards in Transportation</a></li>
             <li><a href="#notable-figures-in-transportation">Notable Figures in Transportation</a></li>
             <li><a href="#miscellaneous">Miscellaneous</a></li>
+            <li><a href="#how-to-contribute">How to Contribute</a></li>
         </ol>
     </nav>
 </div>
@@ -38,6 +45,8 @@ A curated list of awesome open datasets and benchmarks in transportation researc
 - **[GNN4UE](https://figshare.com/articles/dataset/_b_Equilibrium-Traffic-Networks_b_/27889251)** — user-equilibrium traffic flow datasets for graph neural network prediction contributed by [Bahman Madadi](https://github.com/bahmanmdd).
 
 ### Tooling & Workflows
+
+- **[Global Urban Street Networks](https://dataverse.harvard.edu/dataverse/global-urban-street-networks)** — updated and published repository containing street network models for all 10,351 urban areas worldwide (GraphML, GeoPackages, and node/edge lists), plus indicators and metadata. Journal article: [https://doi.org/10.1177/23998083261446991](https://doi.org/10.1177/23998083261446991). Source code: [https://github.com/gboeing/street-network-models](https://github.com/gboeing/street-network-models).
 - **[OSMnx](https://osmnx.readthedocs.io/en/stable/)** — award-winning toolkit by [Geoff Boeing](https://geoffboeing.com/) for downloading, modeling, and analyzing street networks.
 - **[osm2gmns](https://pypi.org/project/osm2gmns/1.0.0rc1/)** — converts OpenStreetMap data into GMNS format; developed by Jiawei Lu and Xuesong (Simon) Zhou.
 - **[DTALite](https://github.com/asu-trans-ai-lab/DTALite)** — ASU Transportation AI Lab's macroscopic/mesoscopic AMS library that natively reads GMNS.
@@ -78,7 +87,7 @@ A curated list of awesome open datasets and benchmarks in transportation researc
 - **Dome Traffic Jam Experiment** — [circular arena trajectories](https://github.com/mathematical-society-of-traffic-flow/mathematical-society-of-traffic-flow.github.io/raw/refs/heads/main/assets/data/trajectory.zip).
 - **[Arizona Ring Experiments Dataset (ARED)](https://ir.vanderbilt.edu/items/2e6f1c05-0174-4abd-b71c-e7e40eae0ce3)** — autonomous-vehicle dampening experiments from Vanderbilt.
 
-## Traffic control
+## Traffic Control
 
 ### Freeway Traffic Control
 - **[Flow-Lite](https://github.com/mit-wu-lab/automatic_vehicular_control)** — lightweight sibling of [Flow](https://flow-project.github.io) without RLlib, ideal for rapid freeway controller prototyping.
@@ -87,9 +96,9 @@ A curated list of awesome open datasets and benchmarks in transportation researc
 - **[Intersection Zoo](https://github.com/mit-wu-lab/IntersectionZoo)** — ICLR 2025 benchmark for multi-agent eco-driving at signalized intersections.
 
 
-## Sensor network
+## Sensor Network
 
-- [Intersection Safety Challenge Stage 1B Validation Data](https://data.transportation.gov/Roadways-and-Bridges/Intersection-Safety-Challenge-Stage-1B-Validation-/j58q-ymi4/about_data)
+- **[Intersection Safety Challenge Stage 1B Validation Data](https://data.transportation.gov/Roadways-and-Bridges/Intersection-Safety-Challenge-Stage-1B-Validation-/j58q-ymi4/about_data)** — validation data from USDOT's Intersection Safety Challenge.
 
 ## Traffic Simulation
 _General-purpose simulators that complement the DTA-focused resources above._
@@ -148,10 +157,15 @@ If you have a dataset or benchmark to contribute, you can:
 
 ---
 Maintained by [Junyi Ji](https://www.jijunyi.com/), Views are my own.
-Last updated: March 15, 2026
+Last updated: {{< meta date >}}
 
 ```{=html}
 <style>
+/* Hide the auto-generated title-block date; we render "Last updated" below */
+#title-block-header {
+    display: none;
+}
+
 /* Floating TOC styling */
 .floating-toc {
     background: #f5fbfe;
