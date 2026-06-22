@@ -19,13 +19,13 @@ Explore our past workshops, tutorials, and publications, along with ongoing init
 <span class="post-date">June 2026</span>
 </div>
 
-### [IEEE IV 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](activities/2026-06-22-ivs-workshop.qmd)
+### [IEEE IV 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](https://www.rerite.org/ivs-2026/)
 
 We will organize a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 2026, titled “Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds.”
 
 **Stay tuned** for the detailed schedule.
 
-[Read Full Post →](activities/2026-06-22-ivs-workshop.qmd){.read-more}
+[Read Full Post →](https://www.rerite.org/ivs-2026/){.read-more}
 </div>
 </div>
 
