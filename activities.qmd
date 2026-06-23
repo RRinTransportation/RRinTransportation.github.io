@@ -11,6 +11,24 @@ Explore our past workshops, tutorials, and publications, along with ongoing init
 <div class="timeline-section ongoing-section">
 
 <div class="timeline-post">
+<div class="post-timeline-marker ongoing">○</div>
+<div class="post-card">
+<div class="post-card-header">
+<span class="post-status ongoing">Future</span>
+<span class="post-date">June 2026</span>
+</div>
+
+### [RERITE: Reproducible Research Prize at hEART 2026](heart-2026-prize.qmd)
+
+We are launching the Reproducible Research Prize 2026, hosted at the hEART Conference 2026 in Paris, recognizing accepted short papers that submit reproducible data, code, and/or models.
+
+**Submit your repository** to be eligible for certificates and recognition at hEART 2026.
+
+[Read Full Post →](heart-2026-prize.qmd){.read-more}
+</div>
+</div>
+
+<div class="timeline-post">
 
 <div class="post-timeline-marker ongoing">○</div>
 <div class="post-card">

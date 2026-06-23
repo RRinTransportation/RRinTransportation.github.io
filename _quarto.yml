@@ -32,9 +32,6 @@ format:
     theme: none
     css: styles.css
     toc: false
-    include-in-header:
-      text: |
-        <link rel="stylesheet" href="styles.css">
     include-before-body:
       - navbar.html
       - content-start.html

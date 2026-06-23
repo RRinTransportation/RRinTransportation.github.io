@@ -30,6 +30,18 @@ RERITE is a global working group of volunteers who are passionate about practici
 <div class="news-slide">
 ::: {.news-card}
 ::: {.news-date}
+June 2026
+:::
+
+### [Reproducible Research Prize at hEART 2026](heart-2026-prize.qmd)
+
+We're launching the Reproducible Research Prize 2026 at the hEART Conference 2026 in Paris, recognizing accepted short papers that submit reproducible data, code, and/or models. Submit your repository!
+:::
+</div>
+
+<div class="news-slide">
+::: {.news-card}
+::: {.news-date}
 Ongoing
 :::
 

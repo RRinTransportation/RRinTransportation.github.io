@@ -1,0 +1,63 @@
+---
+title: "Reproducible Research Prize at hEART 2026"
+---
+
+The RERITE Working Group is pleased to announce the **Reproducible Research Prize 2026**, hosted at the [hEART Conference 2026](https://heart2026.fr/) in Paris. This prize recognizes short papers (2,000–3,000 words) that have been accepted for presentation at hEART 2026 and submit reproducible data, code, and/or models to the RERITE Working Group.
+
+Our goal is to promote transparent, reproducible research in transportation and to encourage authors to share materials in a structured, reusable way.
+
+## Evaluation Criteria
+
+The RERITE Working Group will evaluate the completeness and quality of the files submitted, as described by the **Structured Reproducibility Levels (SRL 3–5)** ([Riehl, Kouvelas, & Makridis, 2025](https://doi.org/10.1186/s12544-025-00718-9)):
+
+::: {.fancy-table-container}
+<table class="fancy-table">
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>What the repository includes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SRL 3</strong></td>
+      <td>Files and basic documentation (README) describing contents.</td>
+    </tr>
+    <tr>
+      <td><strong>SRL 4</strong></td>
+      <td>Files and good, reader-friendly documentation: describes contents and includes installation / execution instructions.</td>
+    </tr>
+    <tr>
+      <td><strong>SRL 5</strong></td>
+      <td>Code, data, and models (if applicable) plus extensive, reader-friendly documentation, examples from the original work (setup, figures, dynamic plots), and licensing info.</td>
+    </tr>
+  </tbody>
+</table>
+:::
+
+Submissions with **SRL ≥ 3** that can actually reproduce the results are eligible for the prize. Higher SRLs and higher quality of the files will receive greater recognition.
+
+## Protected / Sensitive Data
+
+We understand that some datasets cannot be publicly shared due to privacy or legal restrictions. Such submissions remain eligible if authors provide:
+
+- Documentation explaining what is restricted;
+- Synthetic or anonymized example datasets sufficient to reproduce part of the results, or results from a comparable synthetic case study.
+
+## How to Participate
+
+1. **Prepare your repository** with data, code, and/or models.
+2. **Include clear documentation** and instructions for reproducing your results in the repository.
+3. **Include the reproducibility statement** in the conference paper, mentioning the repository link, the SRL level, and any protected data if applicable, as follows:
+
+> The conference paper is eligible for the Reproducible Research Prize. The code and data associated with this work are available at [repository link]. The repository is prepared at [SRL X].
+>
+> Some datasets cannot be publicly shared due to [privacy / legal / proprietary] restrictions. Therefore, [synthetic / anonymized] example datasets are provided to reproduce the methodology.
+
+4. **Fill in the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfdwuXdMT3k8yTh_oGjBY0hZsVnxt-GwO4m2Gn3WvnbKnxXPQ/viewform).**
+
+
+## Winners Will Receive
+
+- Certificate and recognition at the hEART Conference 2026;
+- Announcement in the RERITE newsletter and website.
