@@ -28,24 +28,6 @@ We are launching the Reproducible Research Prize 2026, hosted at the hEART Confe
 </div>
 </div>
 
-<div class="timeline-post">
-
-<div class="post-timeline-marker ongoing">○</div>
-<div class="post-card">
-<div class="post-card-header">
-<span class="post-status ongoing">Future</span>
-<span class="post-date">June 2026</span>
-</div>
-
-### [IEEE IV 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](https://www.rerite.org/ivs-2026/)
-
-We will organize a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 2026, titled “Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds.”
-
-**Stay tuned** for the detailed schedule.
-
-[Read Full Post →](https://www.rerite.org/ivs-2026/){.read-more}
-</div>
-</div>
 
 <div class="timeline-post">
 <div class="post-timeline-marker ongoing">○</div>
@@ -71,6 +53,22 @@ We are guest-editing a topical collection on "Reproducible Research in Transport
 
 <div class="timeline-section past-section">
 
+<div class="timeline-post">
+
+<div class="post-timeline-marker past">○</div>
+<div class="post-card">
+<div class="post-card-header">
+<span class="post-status past">Past</span>
+<span class="post-date">June 2026</span>
+</div>
+
+### [IEEE IV 2026 Workshop: Trustworthy and Open Science for Intelligent Vehicles](https://www.rerite.org/ivs-2026/)
+
+We organized a workshop at the IEEE IV Symposium 2026 in Michigan, June 22, 2026, titled “Trustworthy and Open Science for Intelligent Vehicles: Datasets, Benchmarks, and Testbeds.”
+
+[Read Full Post →](https://www.rerite.org/ivs-2026/){.read-more}
+</div>
+</div>
 
 
 <div class="timeline-post">
